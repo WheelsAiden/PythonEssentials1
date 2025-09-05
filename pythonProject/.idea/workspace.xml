@@ -31,7 +31,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.SandBox.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Python.mod 2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Module-2"
   }
 }]]></component>
   <component name="SharedIndexes">
