@@ -28,16 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Module 2.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.SandBox.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mod 2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Module-2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Module 2 .executor": "Run",
+    "Python.Module 2.executor": "Debug",
+    "Python.SandBox.executor": "Run",
+    "Python.mod 2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Module-2",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.Module 2 ">
     <configuration name="Module 2 " type="PythonConfigurationType" factoryName="Python">
       <module name="pythonProject" />
