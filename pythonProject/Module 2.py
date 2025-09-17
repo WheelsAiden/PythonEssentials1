@@ -1,9 +1,14 @@
+print()
+
 print("Aiden Walker - 9.5.25")
 
 print("Who is your day?")
 print("What is your favorite color?")
 
 print("I love red flowers")
+
+
+print()
 
 
 print("Aiden Walker - 9/9/25")
@@ -45,49 +50,12 @@ print("My", "name", "is", sep="_", end="*")
 print("Monty", "Python.", sep="*", end="*\n")
 
 
+print()
 
+print("Aiden Walker - 9/17/25")
 
+print("Programming","Essentials","in")
+print("Python")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("End Result - Programming***Essentials***in...Python")
 
