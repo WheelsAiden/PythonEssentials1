@@ -54,8 +54,17 @@ print()
 
 print("Aiden Walker - 9/17/25")
 
+print()
+print("Problem =")
 print("Programming","Essentials","in")
 print("Python")
+
+print()
+print("Solution =")
+print("Programming","Essentials","in", sep="***", end="...")
+print("Python")
+
+print()
 
 print("End Result - Programming***Essentials***in...Python")
 
