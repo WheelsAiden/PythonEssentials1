@@ -68,3 +68,500 @@ print()
 
 print("End Result - Programming***Essentials***in...Python")
 
+print()
+
+print("Aiden Walker - 9/18/25")
+
+print()
+
+print("Problem")
+print()
+
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+print()
+
+print("Solutions")
+
+print()
+
+print ("Sol 1 - Minimize the number of print() calls")
+print("\-n")
+print()
+print("    *\n"
+"   * *\n"
+"  *   *\n"
+" *     *\n"
+"***   ***\n"
+"  *   *\n"
+"  *   *\n"
+"  *****")
+
+print()
+
+print("Sol 2 - Make the arrow twice as large")
+
+print()
+
+print(
+"        **\n"
+"       ** **\n"
+"      **   **\n"
+"     **     **\n"
+"********   ********\n"
+"    **   **\n"
+"    **   **\n"
+"    **   **\n"
+"    ********")
+
+print()
+
+print("Sol 3 - Duplicate the arrow side by side")
+
+
+arrow_lines = [
+"        **        **",
+"       ** **      ** **",
+"      **   **    **   **",
+"     **     **  **     **",
+"********   ********   ********",
+"    **   **    **   **",
+"    **   **    **   **",
+"    **   **    **   **",
+"    ********    ********"
+]
+
+print("\n".join(arrow_lines))
+
+print("Sol 4 - My verison")
+
+print()
+
+
+
+
+
+
+print("                 *                  ")
+print("                *  *                ")
+print("               *    *               ")
+print("              *      *              ")
+print("             *        *             ")
+print("            *          *            ")
+print("           *            *           ")
+print("          *              *          ")
+print("         *                *         ")
+print("        *                  *        ")
+print("       *                    *       ")
+print("      *                      *      ")
+print("     *                        *     ")
+print("    *                          *    ")
+print("   *                            *   ")
+print("  ************       ************   ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *       *              ")
+print("             *********              ")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
