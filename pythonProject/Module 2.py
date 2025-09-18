@@ -176,9 +176,15 @@ print("             *       *              ")
 print("             *********              ")
 
 
+print()
+print()
 
+print("Integers")
 
+print()
 
+print("2")
+print(2)
 
 
 
