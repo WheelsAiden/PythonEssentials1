@@ -93,7 +93,7 @@ print("Solutions")
 print()
 
 print ("Sol 1 - Minimize the number of print() calls")
-print("\-n")
+print("\n")
 print()
 print("    *\n"
 "   * *\n"
@@ -186,6 +186,12 @@ print()
 print("2")
 print(2)
 
+print()
+
+print(0o123)
+
+print()
+print(0x123)
 
 
 
