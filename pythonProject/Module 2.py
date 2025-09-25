@@ -193,18 +193,38 @@ print(0o123)
 print()
 print(0x123)
 
+print()
+
+print("Aiden Walker - 9/25/25")
+print()
+
+print("Problem")
+print(0.0000000000000000000001)
+
+print()
+
+print("Anwser")
+print("1e-22")
 
 
+print()
 
+ print("I am a string.")
 
+ print()
 
+ print("I like Monty Python")
 
+print()
 
+print("I like \"Monty Python\"")
+print()
+print('I like "Monty Python"')
 
+print()
 
-
-
-
+print("")
+print()
 
 
 
