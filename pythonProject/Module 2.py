@@ -1,3 +1,5 @@
+from turtledemo.sorting_animate import Block
+
 print()
 
 print("Aiden Walker - 9.5.25")
@@ -241,14 +243,9 @@ print()
 
 print("\"I'm\" \n\"\"learning\"\"\n\"\"\"Python\"\"\"")
 
+print()
 
-
-
-
-
-
-
-
+print("2+2")
 
 
 
