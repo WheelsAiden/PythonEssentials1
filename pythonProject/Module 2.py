@@ -227,16 +227,19 @@ print("")
 print()
 
 
+print("Aiden Walker - 9/30/25")
+
+print()
+
+print(True > False)
+print()
+print(True < False)
 
 
+print()
 
 
-
-
-
-
-
-
+print("\"I'm\" \n\"\"learning\"\"\n\"\"\"Python\"\"\"")
 
 
 
