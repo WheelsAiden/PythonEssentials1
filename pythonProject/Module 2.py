@@ -253,12 +253,27 @@ print("Aiden Walker - 10/1/25")
 
 print()
 
+print("exponentiation (power)")
 print(2 ** 3)
 print(2 ** 3.)
 print(2. ** 3)
 print(2. ** 3.)
 
+print()
 
+print("Multplication")
+print(2 * 3)
+print(2 * 3.)
+print(2. * 3)
+print(2. * 3.)
+
+print()
+
+print("Division")
+print(6 / 3)
+print(6 / 3.)
+print(6. / 3)
+print(6. / 3.)
 
 
 
