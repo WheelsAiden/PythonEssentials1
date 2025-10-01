@@ -247,11 +247,16 @@ print()
 
 print("2+2")
 
+print()
 
+print("Aiden Walker - 10/1/25")
 
+print()
 
-
-
+print(2 ** 3)
+print(2 ** 3.)
+print(2. ** 3)
+print(2. ** 3.)
 
 
 
