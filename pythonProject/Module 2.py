@@ -332,10 +332,16 @@ print()
 print("Operators and their priorities")
 print(2 + 3 * 5)
 
+print()
 
+print("Operators and their bindings: exponentiation")
+print(2 ** 2 ** 3)
 
+print()
 
-
+print("Answers")
+print(64)
+print(256)
 
 
 
