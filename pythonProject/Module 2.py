@@ -292,7 +292,17 @@ print()
 print(-6 // 4)
 print(6. // -4)
 
+print()
 
+print(14 % 4)
+
+print()
+
+print(12 % 4.5)
+
+print()
+
+print(12 % 4.5)
 
 
 
