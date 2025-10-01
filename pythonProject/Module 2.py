@@ -304,7 +304,23 @@ print()
 
 print(12 % 4.5)
 
+print()
 
+print("Addition")
+print(-4 + 4)
+print(-4. + 8)
+
+print()
+
+print("Subtraction")
+print(-4 - 4)
+print(4. - 8)
+print(-1.1)
+
+print()
+
+print("Addition")
+print(+2)
 
 
 
