@@ -322,7 +322,15 @@ print()
 print("Addition")
 print(+2)
 
+print()
 
+print("Operators and their bindings")
+print(9 % 6 % 2)
+
+print()
+
+print("Operators and their priorities")
+print(2 + 3 * 5)
 
 
 
