@@ -355,11 +355,22 @@ print()
 
 print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
+print()
 
+print("Exercise 1")
+print((2 ** 4), (2 * 4.), (2 * 4))
 
+print()
 
+print("Exercise 2")
+print((-2 / 4), (2 / 4), (2 // 4), (-2 // 4))
 
+print()
 
+print("Exercise 3")
+print((2 % -4), (2 % 4), (2 ** 3 ** 2))
+
+print()
 
 
 
