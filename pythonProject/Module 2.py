@@ -388,7 +388,20 @@ print()
 var = "3.8.5"
 print("Python version: " + var)
 
+print()
 
+var = 1
+print(var)
+var = var + 1
+print(var)
+
+print()
+
+var = 100
+var = 200 + 300
+print(var)
+
+print()
 
 
 
