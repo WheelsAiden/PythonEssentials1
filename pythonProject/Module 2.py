@@ -343,9 +343,17 @@ print("Answers")
 print(64)
 print(256)
 
+print()
 
+print("Aiden Walker - 10/2/25")
 
+print()
 
+print(2 * 3 % 5)
+
+print()
+
+print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
 
 
