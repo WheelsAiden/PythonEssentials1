@@ -422,9 +422,33 @@ print(total_apples)
 
 print("Total number of apples:", total_apples)
 
+print()
 
+print("Aiden Walker - 10/6/2025")
 
+print()
 
+print("x = x * 2")
+
+print()
+
+print("i = i + 2 * j ⇒ i += 2 * j")
+
+print()
+
+print("var = var / 2 ⇒ var /= 2")
+
+print()
+
+print("rem = rem % 10 ⇒ rem %= 10")
+
+print()
+
+print("j = j - (i + var + rem) ⇒ j -= (i + var + rem)")
+
+print()
+
+print("x = x ** 2 ⇒ x **= 2")
 
 
 
