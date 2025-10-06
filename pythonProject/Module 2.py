@@ -462,10 +462,35 @@ print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
 print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
 """)
 
+print()
 
+print("Float")
+x = 0
+y = -2 * x**2 + 6 * x - 1
+print("y =", float(y))
 
+x = 1
+y = -2 * x**2 + 6 * x - 1
+print("y =", float(y))
 
+x = -1
+y = -2 * x**2 + 6 * x - 1
+print("y =", float(y))
 
+print()
+
+print("Strings")
+x = 0
+y = -2 * x**2 + 6 * x - 1
+print("y = {:.1f}".format(y))
+
+x = 1
+y = -2 * x**2 + 6 * x - 1
+print("y = {:.1f}".format(y))
+
+x = -1
+y = -2 * x**2 + 6 * x - 1
+print("y = {:.1f}".format(y))
 
 
 
