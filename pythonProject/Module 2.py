@@ -492,18 +492,44 @@ x = -1
 y = -2 * x**2 + 6 * x - 1
 print("y = {:.1f}".format(y))
 
+print()
+
+print("Aiden Walker - 10/9/25")
 
 
+var = 2
+print(var)
+
+var = 3
+print(var)
+
+var += 1
+print(var)
+
+print()
+
+var = "007"
+print("Agent " + var)
 
 
+print()
 
+var = 2
+var = 3
+print(var)
 
+print()
 
+a = '1'
+b = "1"
+print(a + b)
 
+print()
 
-
-
-
+a = 6
+b = 3
+a /= 2 * b
+print(a)
 
 
 
