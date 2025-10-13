@@ -587,6 +587,34 @@ print("Goodbye")
 
 print()
 
+# This program prints
+# an introduction to the screen.
+print("Hello!")  # Invoking the print() function
+# print("I'm Python.")
+
+print()
+
+# print("String #1")
+print("String #2")
+
+print()
+
+print("Problem")
+"""
+# This is
+a multiline
+comment. #
+"""
+print("Hello!")
+
+print()
+
+print("Solution")
+# This is
+# a multiline
+# comment.
+
+print("Hello!")
 
 
 
