@@ -616,10 +616,13 @@ print("Solution")
 
 print("Hello!")
 
+print()
 
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
 
-
-
+print()
 
 
 
