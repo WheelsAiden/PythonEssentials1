@@ -531,10 +531,26 @@ b = 3
 a /= 2 * b
 print(a)
 
+print()
 
+print("Aiden Walker - 10/13/25")
 
+print()
 
+# This program evaluates the hypotenuse c.
+# a and b are the lengths of the legs.
+a = 3.0
+b = 4.0
+c = (a ** 2 + b ** 2) ** 0.5  # We use ** instead of square root.
+print("c =", c)
 
+print()
+
+# This is a test program.
+x = 1
+y = 2
+# y = y + x
+print(x + y)
 
 
 
