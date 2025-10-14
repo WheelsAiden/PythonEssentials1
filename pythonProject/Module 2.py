@@ -530,6 +530,7 @@ print(a)
 
 print()
 
+"""
 print("Aiden Walker - 10/13/25")
 
 print()
@@ -597,11 +598,9 @@ print("String #2")
 print()
 
 print("Problem")
-"""
 # This is
 a multiline
 comment. #
-"""
 print("Hello!")
 
 print()
@@ -626,9 +625,10 @@ print("Hmm...", anything, "...Really?")
 
 print()
 
-anything = float(input("Enter a number: "))
+print("anything = float(input("Enter a number: "))
 something = anything ** 2.0
-print(anything, "to the power of 2 is", something)
+print(anything, "to the power of 2 is", something")
+"""
 
 print()
 
@@ -636,22 +636,6 @@ print("Aiden Walker - 10/14/25")
 
 print()
 
-print("Problem")
-print("""# Testing TypeError message.
 
-anything = input("Enter a number: ")
-something = anything ** 2.0
-print(anything, "to the power of 2 is", something)""")
-
-print()
-
-print("Solution")
-
-# Testing TypeError message.
-
-anything = input("Enter a number: ")
-anything = float(anything)  # Convert string input to a number
-something = anything ** 2.0
-print(anything, "to the power of 2 is", something)
 
 
