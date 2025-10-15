@@ -642,6 +642,11 @@ print(anything, "to the power of 2 is", something)
 """
 print()
 
+print("Aiden Walker - 10/15/25")
 
+print()
 
+anything = float(input("Enter a number: "))
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
 
