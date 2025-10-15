@@ -673,5 +673,27 @@ lnam = input("May I have your last name, please? ")
 print("Thank you.")
 print("\nYour name is " + fnam + " " + lnam + ".")
 
+print()
 
+print("Problem")
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
 
+print()
+
+print("Solution/ Examples")
+
+print()
+
+print("Square")
+print("+" + "-" * 8 + "+")
+print(("|" + " " * 8 + "|\n") * 4, end="")
+print("+" + "-" * 8 + "+")
+
+print()
+
+print("Tall Square")
+print("+" + "-" * 4 + "+")
+print(("|" + " " * 4 + "|\n") * 8, end="")
+print("+" + "-" * 4 + "+")
