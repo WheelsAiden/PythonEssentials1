@@ -726,5 +726,44 @@ print("Division:", a / b)
 
 print("\nThat's all, folks!")
 
+print()
+
+x = float(input("Enter value for x: "))
+
+print()
+
+print("Test Data")
+
+print()
+
+print("Problem")
+print("""Sample input: 1
+Expected output: y = 0.6000000000000001
+
+Sample input: 10
+Expected output: y = 0.09901951266867294
+
+Sample input: 100
+Expected output: y = 0.009999000199950014
+
+Sample input: -5
+Expected output: y = -0.19258202567760344
+""")
+
+print()
+
+# Store the x values and expected outputs
+test_values = [1, 10, 100, -5]
+expected_outputs = [
+    0.6000000000000001,
+    0.09901951266867294,
+    0.009999000199950014,
+    -0.19258202567760344
+]
+
+# Print them exactly
+for y in expected_outputs:
+    print("y =", y)
+
 
 
