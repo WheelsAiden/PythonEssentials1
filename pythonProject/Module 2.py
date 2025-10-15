@@ -697,3 +697,13 @@ print("Tall Square")
 print("+" + "-" * 4 + "+")
 print(("|" + " " * 4 + "|\n") * 8, end="")
 print("+" + "-" * 4 + "+")
+
+print()
+
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
+
+
+
+
