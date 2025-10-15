@@ -704,6 +704,27 @@ leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
 print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
 
+print()
+
+# input a float value for variable a here
+a = float(input("Enter a float value for a: "))
+
+# input a float value for variable b here
+b = float(input("Enter a float value for b: "))
+
+# output the result of addition here
+print("Addition:", a + b)
+
+# output the result of subtraction here
+print("Subtraction:", a - b)
+
+# output the result of multiplication here
+print("Multiplication:", a * b)
+
+# output the result of division here
+print("Division:", a / b)
+
+print("\nThat's all, folks!")
 
 
 
