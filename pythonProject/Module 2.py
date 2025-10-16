@@ -1,7 +1,7 @@
 from turtledemo.sorting_animate import Block
 
 print()
-
+"""
 print("Aiden Walker - 9.5.25")
 
 print("Who is your day?")
@@ -450,14 +450,14 @@ print("x = x ** 2 ⇒ x **= 2")
 print()
 print()
 
-print("""kilometers = 12.25 - miles = 7.38
+print("kilometers = 12.25 - miles = 7.38")
 
 miles_to_kilometers = ###
 kilometers_to_miles = ###
 
 print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
 print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
-""")
+
 
 print()
 
@@ -530,7 +530,7 @@ print(a)
 
 print()
 
-"""
+
 print("Aiden Walker - 10/13/25")
 
 print()
@@ -628,10 +628,10 @@ print()
 print("anything = float(input("Enter a number: "))
 something = anything ** 2.0
 print(anything, "to the power of 2 is", something")
-"""
+
 
 print()
-"""
+
 print("Aiden Walker - 10/14/25")
 
 print()
@@ -639,7 +639,7 @@ print()
 anything = float(input("Enter a number: "))
 something = anything ** 2.0
 print(anything, "to the power of 2 is", something)
-"""
+
 print()
 
 print("Aiden Walker - 10/15/25")
@@ -737,7 +737,7 @@ print("Test Data")
 print()
 
 print("Problem")
-print("""Sample input: 1
+print(Sample input: 1
 Expected output: y = 0.6000000000000001
 
 Sample input: 10
@@ -748,7 +748,7 @@ Expected output: y = 0.009999000199950014
 
 Sample input: -5
 Expected output: y = -0.19258202567760344
-""")
+
 
 print()
 
@@ -764,6 +764,52 @@ expected_outputs = [
 # Print them exactly
 for y in expected_outputs:
     print("y =", y)
+"""
+print()
 
+print("Aiden Walker - 10/16/2025")
 
+print()
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+total_minutes = hour * 60 + mins + dura
+end_hour = (total_minutes // 60) % 24
+end_min = total_minutes % 60
+
+print(f"{end_hour}:{end_min}")
+
+print()
+
+print("Test Data")
+
+print()
+
+print("Examples")
+
+print()
+
+print("Sample input:")
+print("12")
+print("17")
+print("59")
+print("Expected output: 13:16")
+
+print()
+
+print("Sample input:")
+print("23")
+print("58")
+print("642")
+print("Expected output: 10:40")
+
+print()
+
+print("Sample input:")
+print("0")
+print("1")
+print("2939")
+print("Expected output: 1:0")
 
