@@ -51,5 +51,52 @@ a = 0
 
 print("v + a =", v + a)
 
+print()
 
+print("True ✅ → means the statement is correct.")
+print("False ❌ → means the statement is not correct.")
+
+print()
+
+print("EASY — basic comparisons")
+print(5 > 3)
+print(2 < 7)
+print(10 == 10)
+print(4 != 4)
+
+print()
+
+print("MEDIUM — using >= and <=")
+print(5 >= 5)
+print(6 >= 2)
+print(3 <= 3)
+print(9 <= 4)
+
+print()
+
+print("HARDER — saving results and using logic")
+# Store the result of a comparison
+answer = 10 > 5
+print(answer)
+
+# Compare two variables
+black_sheep = 7
+white_sheep = 5
+print(black_sheep > white_sheep)
+
+print()
+
+print("HARDEST — use in a decision (if-else)")
+temperature = 30
+
+if temperature >= 25:
+    print("It’s warm outside!")
+else:
+    print("It’s cold outside!")
+
+print()
+
+print("BONUS — mixed with math")
+print(2 + 3 * 4 > 10)
+print((2 + 3) * 4 > 10)
 
