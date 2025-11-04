@@ -100,3 +100,23 @@ print("BONUS — mixed with math")
 print(2 + 3 * 4 > 10)
 print((2 + 3) * 4 > 10)
 
+print("Aiden Walker - 11/4/25")
+
+print()
+
+n = int(input())
+print(n >= 100)
+
+print()
+
+print("Input\tOutput")
+print("55\t", 55 >= 100)
+print("99\t", 99 >= 100)
+print("100\t", 100 >= 100)
+print("101\t", 101 >= 100)
+print("-5\t", -5 >= 100)
+print("+123\t", +123 >= 100)
+
+
+
+
