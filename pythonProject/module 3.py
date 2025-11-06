@@ -123,4 +123,4 @@ print("Aiden Walker - 11/5/25")
 
 print()
 
-print("No, coding yet - just going through the past to understand *IF,ELIF,ELSE*. Basically when I was a freshmam, I was tought *IF,ELIF,ElSE* and I made a repo but I can't see it bc of my schools blocking system.")
+print("No coding yet — I’m just reviewing if, elif, else statements. Back when I was a freshman, I learned about them and even made a repo for it, but I can’t access it now because my school’s blocking system won’t let me.")
