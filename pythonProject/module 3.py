@@ -211,3 +211,12 @@ largest_number = max(number1, number2, number3)
 
 # Print the result.
 print("The largest number is:", largest_number)
+
+plant = input("Enter plant name: ")
+
+if plant == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif plant == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not " + plant + "!")
