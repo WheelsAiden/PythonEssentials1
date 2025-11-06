@@ -209,6 +209,8 @@ number3 = int(input("Enter the third number: "))
 
 largest_number = max(number1, number2, number3)
 
+print()
+
 # Print the result.
 print("The largest number is:", largest_number)
 
@@ -220,3 +222,36 @@ elif plant == "spathiphyllum":
     print("No, I want a big Spathiphyllum!")
 else:
     print("Spathiphyllum! Not " + plant + "!")
+
+print()
+
+income = float(input("Enter the annual income: "))
+if income <= 85528:
+    tax = (income * 0.18) - 556.02
+else:
+    tax = 14839.02 + ((income - 85528) * 0.32)
+if tax < 0:
+    tax = 0.0
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+
+print()
+
+# Tax calculator function
+def calculate_tax(income):
+    if income <= 85528:
+        tax = (income * 0.18) - 556.02
+    else:
+        tax = 14839.02 + ((income - 85528) * 0.32)
+    if tax < 0:
+        tax = 0.0
+    return round(tax, 0)
+
+# Test data
+test_incomes = [10000, 100000, 1000, -100]
+
+# Run tests
+for income in test_incomes:
+    tax = calculate_tax(income)
+    print(f"Income: {income} → The tax is: {tax} thalers")
+
