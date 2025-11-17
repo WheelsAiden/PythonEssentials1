@@ -127,7 +127,7 @@ print()
 print("No coding yet — I’m just reviewing if, elif, else statements. Back when I was a freshman, I learned about them and even made a repo for it, but I can’t access it now because my school’s blocking system won’t let me.")
 
 print()
-"""
+
 print("Aiden Walker - 11/6/25")
 
 print()
@@ -254,4 +254,22 @@ test_incomes = [10000, 100000, 1000, -100]
 for income in test_incomes:
     tax = calculate_tax(income)
     print(f"Income: {income} → The tax is: {tax} thalers")
+"""
+print("Wheels Aiden - Testing - 11/17/2025")
 
+print()
+
+year = int(input())
+
+# Check if within Gregorian calendar
+if year < 1582:
+    print("Not within the Gregorian calendar period")
+else:
+    if year % 4 != 0:
+        print("Common year")
+    elif year % 100 != 0:
+        print("Leap year")
+    elif year % 400 != 0:
+        print("Common year")
+    else:
+        print("Leap year")
