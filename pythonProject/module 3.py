@@ -254,8 +254,8 @@ test_incomes = [10000, 100000, 1000, -100]
 for income in test_incomes:
     tax = calculate_tax(income)
     print(f"Income: {income} → The tax is: {tax} thalers")
-"""
-print("Wheels Aiden - Testing - 11/17/2025")
+
+print("Wheels Aiden - Testing - 11/17/2025-11/18/25")
 
 print()
 
@@ -454,5 +454,19 @@ while number != 0:
 print("Odd numbers count:", odd_numbers)
 print("Even numbers count:", even_numbers)
 
-    
+print()
+
+counter = 5
+while counter != 0:
+    print("Inside the loop.", counter)
+    counter -= 1
+print("Outside the loop.", counter)
+
+print()
+
+counter = 5
+while counter:
+    print("Inside the loop.", counter)
+    counter -= 1
+print("Outside the loop.", counter)
 
