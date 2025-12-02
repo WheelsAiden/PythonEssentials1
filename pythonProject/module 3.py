@@ -605,3 +605,11 @@ if counter:
     print("The largest number is", largest_number)
 else:
     print("You haven't entered any number.")
+
+print()
+
+while True:
+    word = input("Enter a word: ")
+    if word == "chupacabra":
+        print("You've successfully left the loop.")
+        break
