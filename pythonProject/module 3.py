@@ -613,3 +613,16 @@ while True:
     if word == "chupacabra":
         print("You've successfully left the loop.")
         break
+
+print()
+
+# Prompt the user to enter a word
+user_word = input("Enter a word: ")
+
+# Convert the word to upper case
+user_word = user_word.upper()
+
+for letter in user_word:
+    if letter in ("A", "E", "I", "O", "U"):
+        continue
+    print(letter)
