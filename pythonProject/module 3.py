@@ -25,7 +25,7 @@ print(100==50)
 print(100==100)
 
 print()
-"""
+
 print("Aiden Walker - 11/3/25")
 
 print()
@@ -545,3 +545,25 @@ for i in range(1, 6):
     time.sleep(1)
 
 print("Ready or not, here I come!")
+
+print()
+"""
+print("Aiden Walker - 12/2/2025")
+
+print()
+
+print("The break instruction:")
+for i in range(1, 6):
+    if i == 3:
+        break
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+print()
+
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")
