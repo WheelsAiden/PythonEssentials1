@@ -25,7 +25,7 @@ print(100==50)
 print(100==100)
 
 print()
-
+"""
 print("Aiden Walker - 11/3/25")
 
 print()
@@ -471,11 +471,11 @@ while counter:
 print("Outside the loop.", counter)
 
 print()
-"""
+
 secret_number = 777
 
-print(
-"""
+print("
+
 +================================+
 | Welcome to my game, muggle!    |
 | Enter an integer number        |
@@ -483,7 +483,7 @@ print(
 | picked for you.                |
 | So, what is the secret number? |
 +================================+
-""")
+")
 
 guess = int(input("Enter your guess: "))
 
@@ -533,3 +533,15 @@ print()
 
 for i in range(1, 6):
     print(i, "Mississippi")
+
+print()
+
+Ready or not, here I come!
+
+import time
+
+for i in range(1, 6):
+    print(i, "Mississippi")
+    time.sleep(1)
+
+print("Ready or not, here I come!")
