@@ -779,3 +779,43 @@ for i in range(3):
 
 for i in range(6, 1, -2):
     print(i, end=" ")  # Outputs: 6, 4, 2
+
+print()
+
+for i in range(1, 11):
+    # Line of code.
+        # Line of code.
+
+    x = 1
+    while x < 11:
+# Line of code.
+# Line of code.
+
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+# Line of code.
+# Line of code.
+
+for digit in "0165031806510":
+    if digit == "0":
+# Line of code.
+# Line of code.
+# Line of code.
+
+n = 3
+
+while n > 0:
+    print(n + 1)
+    n -= 1
+else:
+    print(n)
+
+n = range(4)
+
+for num in n:
+    print(num - 1)
+else:
+    print(num)
+
+for i in range(0, 6, 3):
+    print(i)
