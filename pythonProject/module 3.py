@@ -878,3 +878,22 @@ x ^ 0 = x
 
 flag_register = flag_register ^ the_mask
 flag_register ^= the_mask
+
+print()
+
+17 → 10001 (binary)
+
+10001 >> 1 → 1000
+
+17 >> 1  → 17 // 2  → 8
+
+10001 << 2 → 1000100
+
+17 << 2 → 17 * 4 → 68
+
+var = 17
+var_right = var >> 1
+var_left = var << 2
+print(var, var_left, var_right)
+
+
