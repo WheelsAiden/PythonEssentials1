@@ -657,3 +657,25 @@ for letter in user_word:
 
 # Print the word assigned to word_without_vowels.
 print(word_without_vowels)
+
+print()
+
+#origin
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+
+print()
+
+#Modifyed
+i = 5
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+
+print()
