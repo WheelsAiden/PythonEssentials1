@@ -819,3 +819,20 @@ else:
 
 for i in range(0, 6, 3):
     print(i)
+
+print()
+
+# Example 1:
+print(var > 0)
+print(not (var <= 0))
+
+
+# Example 2:
+print(var != 0)
+print(not (var == 0))
+
+not (p and q) == (not p) or (not q)
+not (p or q) == (not p) and (not q)
+
+i = 1
+j = not not i
