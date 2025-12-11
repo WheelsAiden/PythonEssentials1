@@ -927,4 +927,20 @@ f = x << 2
 
 print("Exercise 2 Outputs:", a, b, c, d, e, f)
 
+print()
+
+# Starting list
+numbers = [10, 5, 7, 2, 1]
+print("Original list content:", numbers)
+
+# 1. Change the first element (index 0) to 111
+numbers[0] = 111
+print("After changing first element:", numbers)
+
+# 2. Copy the value of the fifth element (index 4) to the second element (index 1)
+numbers[1] = numbers[4]
+print("After copying 5th element to 2nd:", numbers)
+
+# 3. Final display
+print("Final list content:", numbers)
 
