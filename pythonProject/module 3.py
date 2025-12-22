@@ -1070,3 +1070,13 @@ variable_2 = 2
 auxiliary = variable_1
 variable_1 = variable_2
 variable_2 = auxiliary
+
+print()
+
+my_list = [10, 1, 8, 3, 5]  # you can replace these numbers with any list
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
