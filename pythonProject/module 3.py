@@ -1080,3 +1080,32 @@ for i in range(length // 2):
     my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
 
 print(my_list)
+
+print()
+
+# Step 1: create an empty list named beatles
+beatles = []
+print("Step 1:", beatles)
+
+# Step 2: add John Lennon, Paul McCartney, and George Harrison
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Step 2:", beatles)
+
+# Step 3: prompt the user to add Stu Sutcliffe and Pete Best
+for member in ["Stu Sutcliffe", "Pete Best"]:
+    name = input(f"Add {member} to the band: ")
+    beatles.append(name)
+print("Step 3:", beatles)
+
+# Step 4: remove Stu Sutcliffe and Pete Best
+del beatles[-2:]  # remove the last two members
+print("Step 4:", beatles)
+
+# Step 5: add Ringo Starr at the beginning of the list
+beatles.insert(0, "Ringo Starr")
+print("Step 5:", beatles)
+
+# Testing list length
+print("The Fab", len(beatles))
