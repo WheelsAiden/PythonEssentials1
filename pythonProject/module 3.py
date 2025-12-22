@@ -1109,3 +1109,17 @@ print("Step 5:", beatles)
 
 # Testing list length
 print("The Fab", len(beatles))
+
+print()
+
+my_list = [8, 10, 6, 2, 4]  # list to sort
+swapped = True  # start with True to enter the while loop
+
+while swapped:
+    swapped = False  # assume no swaps
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:  # compare adjacent elements
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]  # swap
+            swapped = True  # a swap occurred
+
+print(my_list)
