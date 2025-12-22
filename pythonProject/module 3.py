@@ -980,3 +980,10 @@ print("New list's length:", len(numbers))  # Printing new list length.
 print("\nNew list content:", numbers)  # Printing current list content.
 
 ###
+
+print()
+
+numbers = [111, 7, 2, 1]
+print(numbers[-1])
+print(numbers[-2])
+
