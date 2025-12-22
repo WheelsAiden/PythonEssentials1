@@ -628,7 +628,7 @@ for letter in user_word:
     print(letter)
 
 print()
-"""
+
 print("Aiden Walker - 12/8/2025")
 
 print()
@@ -943,4 +943,19 @@ print("After copying 5th element to 2nd:", numbers)
 
 # 3. Final display
 print("Final list content:", numbers)
+"""
 
+print("Aiden Walker - 12/22/25"")
+
+print()
+
+numbers = [10, 5, 7, 2, 1]
+print("Original list content:", numbers)  # Printing original list content.
+
+numbers[0] = 111
+print("\nPrevious list content:", numbers)  # Printing previous list content.
+
+numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
+print("Previous list content:", numbers)  # Printing previous list content.
+
+print("\nList length:", len(numbers))  # Printing the list's length.
