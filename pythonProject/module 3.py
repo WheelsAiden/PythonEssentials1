@@ -1020,3 +1020,23 @@ numbers.insert(1, 333)
 print(len(numbers))
 print(numbers)
 
+print()
+
+#Code with Insert
+my_list = []  # Creating an empty list.
+
+for i in range(5):
+    my_list.insert(0, i + 1)
+
+print(my_list)
+
+print()
+
+#Code with append
+my_list = []
+
+for i in range(5):
+    my_list.append(i + 1)
+
+print(my_list)
+
