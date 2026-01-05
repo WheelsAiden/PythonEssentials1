@@ -1261,3 +1261,14 @@ new_list3 = my_list[-1:1:-1]  # start at last element, go backwards to index 1 (
 print("my_list[-1:1:-1] ->", new_list3)  # Output: [2, 4, 6, 8]
 
 print()
+
+# Original list
+my_list = [10, 8, 6, 4, 2]
+
+# Slice omitting the start (equivalent to my_list[0:3])
+new_list1 = my_list[:3]
+print("Slice with omitted start:", new_list1)  # Output: [10, 8, 6]
+
+# Slice omitting the end (equivalent to my_list[3:len(my_list)])
+new_list2 = my_list[3:]
+print("Slice with omitted end:", new_list2)    # Output: [4, 2]
