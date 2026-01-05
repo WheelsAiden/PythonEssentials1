@@ -1210,3 +1210,35 @@ list_1[0] = 2
 # Print both lists
 print("list_1:", list_1)
 print("list_2:", list_2)
+
+print()
+
+
+# ⚠️ Remember:
+# Assigning one list to another copies the REFERENCE, not the contents.
+
+# Dangerous way (reference copy)
+list_1 = [1]
+list_2 = list_1       # Not a real copy!
+list_1[0] = 2
+print("Reference copy example:", list_2)  # Output: [2]
+
+# ✅ Correct way: using a slice
+list_1 = [1]
+list_2 = list_1[:]    # Real copy
+list_1[0] = 2
+print("Slice copy example:", list_2)      # Output: [1]
+
+# Another way to copy safely
+list_3 = list_1.copy()  # Using .copy() method
+list_1[0] = 3
+print("Copy method example:", list_3)     # Output: [2]
+
+# General slice format: my_list[start:end]
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]  # Copy elements index 1 and 2 (stop before 3)
+print("Partial slice example:", new_list) # Output: [8, 6]
+
+# ✅ Slice can also copy the entire list
+full_copy = my_list[:]
+print("Full slice copy:", full_copy)      # Output: [10, 8, 6, 4, 2]
