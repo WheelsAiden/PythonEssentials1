@@ -1386,3 +1386,111 @@ for number in my_list:
 
 print("The list with unique elements only:")
 print(unique_list)
+
+print()
+
+# =========================================
+# 1. Assignment vs Copying Lists
+# =========================================
+
+print("=== Assignment vs Copying Lists ===")
+
+vehicles_one = ['car', 'bicycle', 'motor']
+print("vehicles_one:", vehicles_one)  # ['car', 'bicycle', 'motor']
+
+# Assignment - both variables point to the same list
+vehicles_two = vehicles_one
+del vehicles_one[0]  # deletes 'car'
+print("vehicles_two after deleting from vehicles_one:", vehicles_two)  # ['bicycle', 'motor']
+
+# Copying using slicing
+colors = ['red', 'green', 'orange']
+copy_whole_colors = colors[:]      # copy entire list
+copy_part_colors = colors[0:2]     # copy part of the list
+print("copy_whole_colors:", copy_whole_colors)
+print("copy_part_colors:", copy_part_colors)
+
+# =========================================
+# 2. Slicing and Negative Indices
+# =========================================
+
+print("\n=== Slicing and Negative Indices ===")
+
+sample_list = ["A", "B", "C", "D", "E"]
+new_list = sample_list[2:-1]
+print("new_list with negative index slicing:", new_list)  # ['C', 'D']
+
+my_list = [1, 2, 3, 4, 5]
+slice_one = my_list[2:]   # from index 2 to end
+slice_two = my_list[:2]   # from start to index 2 (exclusive)
+slice_three = my_list[-2:]  # last 2 elements
+print("slice_one:", slice_one)    # [3, 4, 5]
+print("slice_two:", slice_two)    # [1, 2]
+print("slice_three:", slice_three)  # [4, 5]
+
+# =========================================
+# 3. Deleting slices
+# =========================================
+
+print("\n=== Deleting slices ===")
+
+my_list = [1, 2, 3, 4, 5]
+del my_list[0:2]  # delete first two elements
+print("my_list after deleting first 2 elements:", my_list)  # [3, 4, 5]
+
+del my_list[:]  # delete all elements
+print("my_list after deleting all elements:", my_list)  # []
+
+# =========================================
+# 4. Checking membership with 'in' and 'not in'
+# =========================================
+
+print("\n=== Membership testing ===")
+
+my_list = ["A", "B", 1, 2]
+print('"A" in my_list:', "A" in my_list)        # True
+print('"C" not in my_list:', "C" not in my_list)  # True
+print('2 not in my_list:', 2 not in my_list)     # False
+
+# =========================================
+# 5. Exercises
+# =========================================
+
+print("\n=== Exercise 1 ===")
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+del list_1[0]
+del list_2[0]
+print("Exercise 1 output:", list_3)  # ['C']
+
+print("\n=== Exercise 2 ===")
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+del list_1[0]
+del list_2  # deletes the variable, not the list
+print("Exercise 2 output:", list_3)  # ['B', 'C']
+
+print("\n=== Exercise 3 ===")
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+del list_1[0]
+del list_2[:]  # clears the list contents
+print("Exercise 3 output:", list_3)  # []
+
+print("\n=== Exercise 4 ===")
+list_1 = ["A", "B", "C"]
+list_2 = list_1[:]  # copy of list_1
+list_3 = list_2[:]  # copy of list_2
+del list_1[0]
+del list_2[0]
+print("Exercise 4 output:", list_3)  # ['B', 'C']
+
+print("\n=== Exercise 5 ===")
+my_list = [1, 2, "in", True, "ABC"]
+print("1 in my_list:", 1 in my_list)        # True
+print('"A" not in my_list:', "A" not in my_list)  # True
+print("3 not in my_list:", 3 not in my_list)  # True
+print("False in my_list:", False in my_list)  # False
