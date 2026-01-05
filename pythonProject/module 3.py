@@ -1197,3 +1197,16 @@ lst.reverse()
 print(lst)
 
 print()
+
+# Create the original list
+list_1 = [1]
+
+# Make a real copy of the list
+list_2 = list_1.copy()
+
+# Modify the first list
+list_1[0] = 2
+
+# Print both lists
+print("list_1:", list_1)
+print("list_2:", list_2)
