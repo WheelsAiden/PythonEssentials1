@@ -1305,3 +1305,38 @@ my_list = [0, 3, 12, 8, 2]
 print(5 in my_list)
 print(5 not in my_list)
 print(12 in my_list)
+
+print()
+
+# List of numbers
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+# -----------------------------
+# Method 1: Simple for loop (includes first element)
+# -----------------------------
+largest1 = my_list[0]
+for i in my_list:  # includes first element, one extra comparison
+    if i > largest1:
+        largest1 = i
+
+print("Method 1 - for i in my_list:", largest1)
+
+# -----------------------------
+# Method 2: Slice to skip the first element
+# -----------------------------
+largest2 = my_list[0]
+for i in my_list[1:]:  # skips first element
+    if i > largest2:
+        largest2 = i
+
+print("Method 2 - for i in my_list[1:]:", largest2)
+
+# -----------------------------
+# Method 3: Use range starting from index 1
+# -----------------------------
+largest3 = my_list[0]
+for i in range(1, len(my_list)):  # no slicing, no extra memory
+    if my_list[i] > largest3:
+        largest3 = my_list[i]
+
+print("Method 3 - for i in range(1, len(my_list)):", largest3)
