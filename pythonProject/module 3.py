@@ -942,8 +942,7 @@ numbers[1] = numbers[4]
 print("After copying 5th element to 2nd:", numbers)
 
 # 3. Final display
-print("Final list content:", numbers)
-"""
+print("Final list content:", numbers)\
 
 print("Aiden Walker - 12/22/25"")
 
@@ -1123,3 +1122,31 @@ while swapped:
             swapped = True  # a swap occurred
 
 print(my_list)
+"""
+
+print()
+
+print("Aiden Walker - 1/5/25")
+
+print()
+
+my_list = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    my_list.append(val)
+
+print("You entered:", my_list)   # 👈 DEBUG LINE
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print("\nSorted:")
+print(my_list)
+
