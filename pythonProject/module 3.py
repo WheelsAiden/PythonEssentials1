@@ -1242,3 +1242,22 @@ print("Partial slice example:", new_list) # Output: [8, 6]
 # ✅ Slice can also copy the entire list
 full_copy = my_list[:]
 print("Full slice copy:", full_copy)      # Output: [10, 8, 6, 4, 2]
+
+print()
+
+# Original list
+my_list = [10, 8, 6, 4, 2]
+
+# 1️⃣ Slice with negative end index
+new_list1 = my_list[1:-1]  # start at index 1, end before last element
+print("my_list[1:-1] ->", new_list1)  # Output: [8, 6, 4]
+
+# 2️⃣ Slice where start comes after end (results in empty list)
+new_list2 = my_list[-1:1]  # start at last element, end before index 1
+print("my_list[-1:1] ->", new_list2)  # Output: []
+
+# 3️⃣ Slice going backwards using a negative step
+new_list3 = my_list[-1:1:-1]  # start at last element, go backwards to index 1 (not inclusive)
+print("my_list[-1:1:-1] ->", new_list3)  # Output: [2, 4, 6, 8]
+
+print()
