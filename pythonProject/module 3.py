@@ -1370,3 +1370,19 @@ for number in bets:
         hits += 1
 
 print("Number of hits:", hits)
+
+print()
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+# Create an empty list to store unique elements
+unique_list = []
+
+# Iterate through each element in the original list
+for number in my_list:
+    # Add it to the unique list only if it is not already there
+    if number not in unique_list:
+        unique_list.append(number)
+
+print("The list with unique elements only:")
+print(unique_list)
