@@ -1272,3 +1272,28 @@ print("Slice with omitted start:", new_list1)  # Output: [10, 8, 6]
 # Slice omitting the end (equivalent to my_list[3:len(my_list)])
 new_list2 = my_list[3:]
 print("Slice with omitted end:", new_list2)    # Output: [4, 2]
+
+print()
+
+# Copying a whole list using slicing
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:]  # Omitting start and end makes a copy
+print("Copy of the list:", new_list)
+
+# Deleting a slice of the list
+my_list = [10, 8, 6, 4, 2]
+del my_list[1:3]  # Deletes elements at index 1 and 2
+print("After deleting a slice [1:3]:", my_list)
+
+# Deleting all elements in the list
+my_list = [10, 8, 6, 4, 2]
+del my_list[:]  # Deletes all elements, list remains but empty
+print("After deleting all elements:", my_list)
+
+# Deleting the entire list itself
+my_list = [10, 8, 6, 4, 2]
+del my_list  # Deletes the list variable itself
+try:
+    print(my_list)  # This will cause a runtime error
+except NameError as e:
+    print("Error:", e)
