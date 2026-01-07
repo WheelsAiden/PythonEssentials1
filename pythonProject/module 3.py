@@ -1494,3 +1494,34 @@ print("1 in my_list:", 1 in my_list)        # True
 print('"A" not in my_list:', "A" not in my_list)  # True
 print("3 not in my_list:", 3 not in my_list)  # True
 print("False in my_list:", False in my_list)  # False
+
+print()
+
+print("Aiden Walker - 1/7/2026")
+
+# Assume WHITE_PAWN is predefined
+WHITE_PAWN = "P"
+
+# Create one row of white pawns using a loop
+row_loop = []
+for i in range(8):
+    row_loop.append(WHITE_PAWN)
+
+# Create one row of white pawns using list comprehension
+row_comp = [WHITE_PAWN for i in range(8)]
+
+# Example 1: squares of numbers 0–9
+squares = [x ** 2 for x in range(10)]
+
+# Example 2: first 8 powers of two
+twos = [2 ** i for i in range(8)]
+
+# Example 3: only odd numbers from squares
+odds = [x for x in squares if x % 2 != 0]
+
+# Output results
+print("Row (loop):", row_loop)
+print("Row (comprehension):", row_comp)
+print("Squares:", squares)
+print("Powers of two:", twos)
+print("Odd squares:", odds)
