@@ -1525,3 +1525,22 @@ print("Row (comprehension):", row_comp)
 print("Squares:", squares)
 print("Powers of two:", twos)
 print("Odd squares:", odds)
+
+print()
+
+EMPTY = "."
+
+# Method 1: using a loop
+board = []
+
+for i in range(8):
+    row = [EMPTY for i in range(8)]
+    board.append(row)
+
+print(board)
+
+
+# Method 2: using nested list comprehension
+board = [[EMPTY for i in range(8)] for j in range(8)]
+
+print(board)
