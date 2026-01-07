@@ -1568,3 +1568,42 @@ board[3][4] = PAWN
 
 for row in board:
     print(row)
+
+print()
+
+# Create a 2D list for temperatures
+# 31 days, 24 hours each, filled with 0.0
+temps = [[0.0 for h in range(24)] for d in range(31)]
+
+# ----------------------------------
+# The matrix is magically updated here
+# (assume temps now contains real data)
+# ----------------------------------
+
+# 1. Calculate the average temperature at noon
+total = 0.0
+
+for day in temps:
+    total += day[11]  # noon is index 11
+
+average = total / 31
+print("Average temperature at noon:", average)
+
+# 2. Find the highest temperature during the month
+highest = -100.0
+
+for day in temps:
+    for temp in day:
+        if temp > highest:
+            highest = temp
+
+print("The highest temperature was:", highest)
+
+# 3. Count how many days were hot at noon (>= 20°C)
+hot_days = 0
+
+for day in temps:
+    if day[11] > 20.0:
+        hot_days += 1
+
+print(hot_days, "days were hot.")
