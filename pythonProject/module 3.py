@@ -1607,3 +1607,30 @@ for day in temps:
         hot_days += 1
 
 print(hot_days, "days were hot.")
+
+print()
+
+# Three-dimensional arrays in Python: hotel example
+
+# Imagine a hotel with 3 buildings, 15 floors each, 20 rooms per floor
+# We'll use a Boolean value: False = free, True = occupied
+
+# Step 1: Create the hotel rooms array
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+
+# Step 2: Book a room for two newlyweds
+# Second building (index 1), tenth floor (index 9), room 14 (index 13)
+rooms[1][9][13] = True
+
+# Step 3: Release a room
+# First building (index 0), fifth floor (index 4), room 2 (index 1)
+rooms[0][4][1] = False
+
+# Step 4: Check vacancies on the 15th floor of the third building
+vacancy = 0
+for room_number in range(20):
+    if not rooms[2][14][room_number]:
+        vacancy += 1
+
+# Step 5: Print the number of available rooms
+print("Number of available rooms on 15th floor, 3rd building:", vacancy)
