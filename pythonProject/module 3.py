@@ -1634,3 +1634,48 @@ for room_number in range(20):
 
 # Step 5: Print the number of available rooms
 print("Number of available rooms on 15th floor, 3rd building:", vacancy)
+
+print()
+
+# 1. List Comprehension - create a list of first five natural numbers cubed
+cubed = [num ** 3 for num in range(5)]
+print("Cubed numbers (1D list):", cubed)
+print()  # blank line for readability
+
+# 2. Nested Lists - 2D array (4x4 table of smileys)
+table = [[":(", ":)", ":(", ":)"],
+         [":)", ":(", ":)", ":)"],
+         [":(", ":)", ":)", ":("],
+         [":)", ":)", ":)", ":("]]
+
+print("2D Table (4x4):")
+for row in table:
+    print(row)
+
+# Access examples
+print("table[0][0] =", table[0][0])  # outputs: ':('
+print("table[0][3] =", table[0][3])  # outputs: ':)'
+print()  # blank line
+
+# 3. 3D Array (3x3x3 cube of smileys and 'x')
+cube = [[[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':(', 'x', 'x']],
+
+        [[':)', 'x', 'x'],
+         [':(', 'x', 'x'],
+         [':)', 'x', 'x']],
+
+        [[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':)', 'x', 'x']]]
+
+print("3D Cube (3x3x3):")
+for layer_index, layer in enumerate(cube):
+    print(f"Layer {layer_index}:")
+    for row in layer:
+        print(row)
+
+# Access examples
+print("cube[0][0][0] =", cube[0][0][0])  # outputs: ':('
+print("cube[2][2][0] =", cube[2][2][0])  # outputs: ':)'
