@@ -1,4 +1,4 @@
-"""
+
 from idlelib.configdialog import VarTrace
 
 print("Aiden Walker - 10/30/25")
@@ -1122,7 +1122,7 @@ while swapped:
             swapped = True  # a swap occurred
 
 print(my_list)
-"""
+
 
 print()
 
