@@ -144,3 +144,22 @@ message(10)  # Output: Enter a number: 10
 # 3. Parameters are like mailboxes; arguments are the mail you put in them.
 
 print()
+
+# Function with a required parameter
+def message(number=0):  # default value is 0
+    print("Enter a number:", number)
+
+# Calling the function with an argument
+message(1)   # Output: Enter a number: 1
+
+# Calling the function without an argument uses the default
+message()    # Output: Enter a number: 0
+
+# Global variable with the same name as the parameter
+number = 1234
+
+# Calling the function again
+message(5)   # Output: Enter a number: 5
+
+# Printing the global variable
+print(number)  # Output: 1234
