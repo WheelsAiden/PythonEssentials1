@@ -163,3 +163,23 @@ message(5)   # Output: Enter a number: 5
 
 # Printing the global variable
 print(number)  # Output: 1234
+
+print()
+
+# Function with two parameters
+def message(what, number):
+    print("Enter", what, "number", number)
+
+# Invoking the function
+message("telephone", 11)
+message("price", 5)
+message("number", "number")
+
+# ---- Example: adding a third parameter ----
+def message_extended(what, number, urgency):
+    print("Enter", what, "number", number, "-", "Urgency:", urgency)
+
+# Invoking the extended function
+message_extended("telephone", 11, "high")
+message_extended("price", 5, "low")
+message_extended("appointment", 3, "medium")
