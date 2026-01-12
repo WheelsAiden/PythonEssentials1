@@ -78,3 +78,47 @@ c = int(input())
 # The benefit:
 # If you want to change the prompt message,
 # you only need to change it in ONE place — inside the function
+
+print()
+
+# Functions in Python
+
+# A function is a block of code that performs a specific task when called.
+# Functions make code reusable, organized, and easier to read.
+# Functions can have parameters and can return values.
+
+# Types of functions:
+# 1. Built-in functions (like print() and input())
+# 2. Functions from pre-installed modules (imported)
+# 3. User-defined functions (created by the programmer)
+# 4. Lambda functions (short anonymous functions)
+
+# Defining a function without parameters
+def message():
+    print("Hello")
+
+message()  # Calling the function
+
+# Defining a function with parameters
+def hello(name):
+    print("Hello,", name)
+
+name = input("Enter your name: ")
+hello(name)  # Calling the function with an argument
+
+# Exercises and Answers
+
+# Exercise 1: The input() function is a built-in function.
+
+# Exercise 2: Calling a function before defining it causes an error
+# hi()  # Uncommenting this line would cause NameError
+def hi():
+    print("hi!")
+
+# Exercise 3: Passing the wrong number of arguments causes an error
+# hi(5)  # Uncommenting this line would cause TypeError
+hi()  # Correct call with no arguments
+
+# Key Rules:
+# 1. Always define a function before calling it.
+# 2. Make sure the number of arguments matches the function's parameters.
