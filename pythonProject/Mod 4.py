@@ -183,3 +183,29 @@ def message_extended(what, number, urgency):
 message_extended("telephone", 11, "high")
 message_extended("price", 5, "low")
 message_extended("appointment", 3, "medium")
+
+print()
+
+# Culture-independent introduction function
+def introduction(first_name, last_name, culture="Western"):
+    """
+    Prints a greeting with a person's name.
+
+    Parameters:
+    - first_name: str, person's first name
+    - last_name: str, person's last name
+    - culture: str, name order convention ("Western" or "Hungarian")
+    """
+    if culture.lower() == "hungarian":
+        # Hungarian style: last name first
+        print("Hello, my name is", last_name, first_name)
+    else:
+        # Western style: first name first
+        print("Hello, my name is", first_name, last_name)
+
+
+# Examples using positional and keyword arguments
+introduction("Luke", "Skywalker")  # Western by default
+introduction("Skywalker", "Luke", culture="Hungarian")  # Hungarian
+introduction(first_name="Jesse", last_name="Quick")  # Keyword arguments
+introduction(last_name="Kent", first_name="Clark")  # Keyword arguments in reverse order
