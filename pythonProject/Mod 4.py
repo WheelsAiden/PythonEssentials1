@@ -122,3 +122,25 @@ hi()  # Correct call with no arguments
 # Key Rules:
 # 1. Always define a function before calling it.
 # 2. Make sure the number of arguments matches the function's parameters.
+
+print()
+
+# Parameterized function example
+
+# Step 1: Define the function with a parameter
+def message(number):
+    # 'number' is a parameter — it exists only inside this function
+    print("Enter a number:", number)
+
+# Step 2: Call the function with an argument
+# The argument is the actual value we pass to the parameter
+message(5)   # Output: Enter a number: 5
+message(10)  # Output: Enter a number: 10
+
+# Notes:
+# 1. Parameters live inside the function; arguments come from outside.
+# 2. The number of arguments must match the number of parameters.
+#    Forgetting an argument or giving extra will cause an error.
+# 3. Parameters are like mailboxes; arguments are the mail you put in them.
+
+print()
