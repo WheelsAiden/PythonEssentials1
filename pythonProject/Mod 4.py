@@ -224,3 +224,11 @@ introduction(last_name="Skywalker", first_name="Luke")
 # Incorrect keyword argument usage (will cause a TypeError)
 # Uncomment to see the error
 # introduction(surname="Skywalker", first_name="Luke")
+
+print()
+
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+
+# mixed positional and keyword arguments
+adding(3, b=2, c=1)
