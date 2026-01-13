@@ -363,3 +363,24 @@ another_boring_function()  # return value is ignored
 print("This lesson is boring...")
 
 print()
+
+# Assigning None to a variable
+value = None
+
+# Checking the variable's state
+if value is None:
+    print("Sorry, you don't carry any value")
+
+# Function that doesn't explicitly return anything
+def no_return():
+    print("This function doesn't return anything")
+
+# Call the function and capture its "return value"
+result = no_return()
+print("Returned value:", result)
+
+# Check the type of the returned value
+print("Type of returned value:", type(result))
+
+print()
+
