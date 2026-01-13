@@ -209,3 +209,18 @@ introduction("Luke", "Skywalker")  # Western by default
 introduction("Skywalker", "Luke", culture="Hungarian")  # Hungarian
 introduction(first_name="Jesse", last_name="Quick")  # Keyword arguments
 introduction(last_name="Kent", first_name="Clark")  # Keyword arguments in reverse order
+
+print()
+
+print("Aiden Wallker - 1/13/26")
+
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+
+# Correct keyword argument usage
+introduction(first_name="James", last_name="Bond")
+introduction(last_name="Skywalker", first_name="Luke")
+
+# Incorrect keyword argument usage (will cause a TypeError)
+# Uncomment to see the error
+# introduction(surname="Skywalker", first_name="Luke")
