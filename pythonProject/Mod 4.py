@@ -384,3 +384,35 @@ print("Type of returned value:", type(result))
 
 print()
 
+# Original strange_function
+def strange_function(n):
+    if n % 2 == 0:
+        return True
+
+# Testing the function
+print(strange_function(2))  # Output: True
+print(strange_function(1))  # Output: None
+
+# Explanation:
+# - If n is even, the function returns True.
+# - If n is odd, there is no return statement executed,
+#   so Python automatically returns None.
+
+# Improved version to always return a boolean
+def strange_function_fixed(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+# Or more succinctly
+def strange_function_succinct(n):
+    return n % 2 == 0
+
+# Testing the improved functions
+print(strange_function_fixed(2))      # Output: True
+print(strange_function_fixed(1))      # Output: False
+print(strange_function_succinct(2))   # Output: True
+print(strange_function_succinct(1))   # Output: False
+
+print()
