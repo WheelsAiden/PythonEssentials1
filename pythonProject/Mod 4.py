@@ -232,3 +232,18 @@ def adding(a, b, c):
 
 # mixed positional and keyword arguments
 adding(3, b=2, c=1)
+
+print()
+
+# Parametrized function with a default parameter
+
+def introduction(first_name, last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+
+# Function calls
+introduction("James", "Doe")
+introduction("Henry")
+introduction(first_name="William")
+introduction(last_name="Hopkins", first_name="John")
+
+print()
