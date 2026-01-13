@@ -247,3 +247,77 @@ introduction(first_name="William")
 introduction(last_name="Hopkins", first_name="John")
 
 print()
+
+# Key Takeaways – Functions & Arguments (All-in-One Code Block)
+
+# One-parameter function
+def hi(name):
+    print("Hi,", name)
+
+hi("Greg")
+
+
+# Two-parameter function
+def hi_all(name_1, name_2):
+    print("Hi,", name_2)
+    print("Hi,", name_1)
+
+hi_all("Sebastian", "Konrad")
+
+
+# Three-parameter function with input
+def address(street, city, postal_code):
+    print("Your address is:", street, "St.,", city, postal_code)
+
+s = input("Street: ")
+p_c = input("Postal Code: ")
+c = input("City: ")
+
+address(s, c, p_c)
+
+
+# Positional and keyword arguments
+def subtra(a, b):
+    print(a - b)
+
+subtra(5, 2)          # 3
+subtra(2, 5)          # -3
+subtra(a=5, b=2)      # 3
+subtra(b=2, a=5)      # 3
+subtra(5, b=2)        # 3
+# subtra(a=5, 2)      # SyntaxError (positional after keyword)
+
+
+# Default parameter values
+def name(first_name, last_name="Smith"):
+    print(first_name, last_name)
+
+name("Andy")                 # Andy Smith
+name("Betty", "Johnson")     # Betty Johnson
+
+
+# Exercise examples
+def intro(a="James Bond", b="Bond"):
+    print("My name is", b + ".", a + ".")
+
+intro()                      # My name is Bond. James Bond.
+intro(b="Sean Connery")      # My name is Sean Connery. James Bond.
+
+
+def intro2(a, b="Bond"):
+    print("My name is", b + ".", a + ".")
+
+intro2("Susan")              # My name is Bond. Susan.
+
+
+# Incorrect function definition (will cause SyntaxError)
+# def add_numbers(a, b=2, c):
+#     print(a + b + c)
+
+# Correct function definition
+def add_numbers(a, c, b=2):
+    print(a + b + c)
+
+add_numbers(a=1, c=3)        # 6
+
+print()
