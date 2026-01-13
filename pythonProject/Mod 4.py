@@ -321,3 +321,45 @@ def add_numbers(a, c, b=2):
 add_numbers(a=1, c=3)        # 6
 
 print()
+
+# Example 1: return without an expression (early exit)
+def happy_new_year(wishes=True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return  # stops the function early
+    print("Happy New Year!")
+
+
+# Called with no arguments
+happy_new_year()
+
+print()  # blank line
+
+# Called with False
+happy_new_year(False)
+
+print("\n-----------------\n")
+
+# Example 2: return with an expression
+def boring_function():
+    return 123
+
+
+x = boring_function()
+print("The boring_function has returned its result. It's:", x)
+
+print("\n-----------------\n")
+
+# Example 3: return value is ignored
+def another_boring_function():
+    print("'Boredom Mode' ON.")
+    return 123
+
+
+print("This lesson is interesting!")
+another_boring_function()  # return value is ignored
+print("This lesson is boring...")
+
+print()
