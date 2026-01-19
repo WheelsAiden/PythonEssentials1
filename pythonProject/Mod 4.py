@@ -460,3 +460,27 @@ print(nums)                 # Output: [1, 2, 3]
 
 print()
 
+# A function can return a list, just like it can return any other Python object.
+# This function creates a list, fills it, and returns it.
+
+def strange_list_fun(n):
+    strange_list = []  # create an empty local list
+
+    for i in range(0, n):  # loop from 0 to n-1
+        strange_list.insert(0, i)
+        # insert(0, i) places i at the beginning of the list,
+        # pushing existing elements to the right
+
+    return strange_list  # return the finished list
+
+
+# Calling the function with n = 5
+print(strange_list_fun(5))
+# Output: [4, 3, 2, 1, 0]
+
+# Key idea:
+# - Functions can return lists
+# - The list is local to the function until returned
+# - Assigning the returned list copies the reference, not the contents
+#   (use copy(), slicing [:], or list() to make a real copy)
+
