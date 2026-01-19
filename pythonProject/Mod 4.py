@@ -509,3 +509,64 @@ for i in range(len(test_data)):
         print("Failed")
 
 print()
+
+def is_year_leap(year):
+    if year < 1582:
+        return None
+    if year % 4 != 0:
+        return False
+    elif year % 100 != 0:
+        return True
+    elif year % 400 != 0:
+        return False
+    else:
+        return True
+
+
+def days_in_month(year, month):
+    # Validate input
+    if year < 1582 or month < 1 or month > 12:
+        return None
+
+    # Month lengths (February handled separately)
+    month_lengths = [31, 28, 31, 30, 31, 30,
+                     31, 31, 30, 31, 30, 31]
+
+    # Adjust February for leap years
+    if month == 2 and is_year_leap(year):
+        return 29
+
+    return month_lengths[month - 1]
+
+
+# Provided tests
+test_years = [1900, 2000, 2016, 1987]
+test_months = [2, 2, 1, 11]
+test_results = [28, 29, 31, 30]
+
+for i in range(len(test_years)):
+    yr = test_years[i]
+    mo = test_months[i]
+    print(yr, mo, "->", end="")
+    result = days_in_month(yr, mo)
+    if result == test_results[i]:
+        print("OK")
+    else:
+        print("Failed")
+
+
+# Additional test cases (recommended)
+extra_tests = [
+    (2024, 2),   # leap year
+    (2023, 2),   # non-leap year
+    (2023, 4),   # April
+    (2023, 13),  # invalid month
+    (1500, 1)    # invalid year
+]
+
+print("\nExtra tests:")
+for year, month in extra_tests:
+    print(year, month, "->", days_in_month(year, month))
+
+print()
+
