@@ -416,3 +416,47 @@ print(strange_function_succinct(2))   # Output: True
 print(strange_function_succinct(1))   # Output: False
 
 print()
+
+print("Aiden Walker - 1/19/2026")
+
+print()
+
+# Demonstrates passing a list to a function, why non-lists fail,
+# and how list references work (lists are NOT copied automatically).
+
+def list_sum(lst):
+    # Safety check to avoid errors like list_sum(5)
+    if not isinstance(lst, list):
+        return "Error: argument must be a list"
+
+    s = 0
+    for elem in lst:
+        s += elem
+    return s
+
+
+# Correct usage
+print(list_sum([5, 4, 3]))  # Output: 12
+
+
+# Incorrect usage (handled safely now)
+print(list_sum(5))          # Output: Error message
+
+
+# IMPORTANT: lists are passed by reference, not copied
+def add_item(lst):
+    lst.append(10)
+
+
+nums = [1, 2, 3]
+add_item(nums)
+print(nums)                 # Output: [1, 2, 3, 10]
+
+
+# To avoid modifying the original list, pass a copy instead
+nums = [1, 2, 3]
+add_item(nums.copy())       # or nums[:] or list(nums)
+print(nums)                 # Output: [1, 2, 3]
+
+print()
+
