@@ -651,3 +651,115 @@ print(miles_gallon_to_liters_100km(31.4))
 print(miles_gallon_to_liters_100km(23.5))
 
 print()
+
+# =========================
+# TAKEAWAY 1: Using return
+# =========================
+
+def multiply(a, b):
+    return a * b
+
+print("Takeaway 1a:", multiply(3, 4))    # outputs: 12
+
+def multiply_none(a, b):
+    return
+
+print("Takeaway 1b:", multiply_none(3, 4))    # outputs: None
+
+# =========================
+# TAKEAWAY 2: Assigning function result to a variable
+# =========================
+
+def wishes():
+    return "Happy Birthday!"
+
+w = wishes()
+print("Takeaway 2a:", w)    # outputs: Happy Birthday!
+
+# Difference between printing inside function vs returning
+def wishes_with_print():
+    print("My Wishes")
+    return "Happy Birthday"
+
+print("Takeaway 2b:")
+wishes_with_print()    # prints: My Wishes (but return ignored)
+
+print("Takeaway 2c:")
+print(wishes_with_print())
+# prints:
+# My Wishes
+# Happy Birthday
+
+# =========================
+# TAKEAWAY 3: Passing a list to a function
+# =========================
+
+def hi_everybody(my_list):
+    for name in my_list:
+        print("Hi,", name)
+
+print("Takeaway 3:")
+hi_everybody(["Adam", "John", "Lucy"])
+
+# =========================
+# TAKEAWAY 4: Returning a list from a function
+# =========================
+
+def create_list(n):
+    my_list = []
+    for i in range(n):
+        my_list.append(i)
+    return my_list
+
+print("Takeaway 4:", create_list(5))   # outputs: [0, 1, 2, 3, 4]
+
+# =========================
+# EXERCISE 1
+# =========================
+
+def hi():
+    return
+    print("Hi!")
+
+print("Exercise 1:", hi())   # outputs: None (nothing is printed inside)
+
+# =========================
+# EXERCISE 2
+# =========================
+
+def is_int(data):
+    if type(data) == int:
+        return True
+    elif type(data) == float:
+        return False
+
+print("Exercise 2a:", is_int(5))     # True
+print("Exercise 2b:", is_int(5.0))   # False
+print("Exercise 2c:", is_int("5"))   # None
+
+# =========================
+# EXERCISE 3
+# =========================
+
+def even_num_lst(ran):
+    lst = []
+    for num in range(ran):
+        if num % 2 == 0:
+            lst.append(num)
+    return lst
+
+print("Exercise 3:", even_num_lst(11))  # [0, 2, 4, 6, 8, 10]
+
+# =========================
+# EXERCISE 4
+# =========================
+
+def list_updater(lst):
+    upd_list = []
+    for elem in lst:
+        elem **= 2
+        upd_list.append(elem)
+    return upd_list
+
+foo = [1, 2, 3, 4, 5]
+print("Exercise 4:", list_updater(foo))  # [1, 4, 9, 16, 25]
