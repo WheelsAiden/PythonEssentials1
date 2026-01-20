@@ -1,3 +1,4 @@
+"""
 print("Aiden Walker - 1/12/26")
 
 print()
@@ -188,14 +189,14 @@ print()
 
 # Culture-independent introduction function
 def introduction(first_name, last_name, culture="Western"):
-    """
+
     Prints a greeting with a person's name.
 
     Parameters:
     - first_name: str, person's first name
     - last_name: str, person's last name
     - culture: str, name order convention ("Western" or "Hungarian")
-    """
+
     if culture.lower() == "hungarian":
         # Hungarian style: last name first
         print("Hello, my name is", last_name, first_name)
@@ -416,7 +417,7 @@ print(strange_function_succinct(2))   # Output: True
 print(strange_function_succinct(1))   # Output: False
 
 print()
-
+"""
 print("Aiden Walker - 1/19/2026")
 
 print()
