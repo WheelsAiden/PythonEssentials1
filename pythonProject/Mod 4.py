@@ -823,3 +823,31 @@ def my_function():
 
 var = 10
 my_function()    # UnboundLocalError
+
+print()
+
+# Example demonstrating the global keyword in Python
+
+def my_function():
+    # Tell Python: use the global variable 'var', not a new local one
+    global var
+    var = 2  # modifies the global variable
+    print("Do I know that variable?", var)  # prints 2
+
+# Create a global variable
+var = 1
+print("Before function call, var =", var)  # prints 1
+
+# Call the function, which modifies the global variable
+my_function()  # prints: Do I know that variable? 2
+
+# Check the value of var after the function call
+print("After function call, var =", var)  # prints 2
+
+# -------------------------------------------------------------------
+# Key points:
+# 1. Normally, assigning inside a function creates a local variable.
+# 2. Using 'global var' tells Python to use the variable from the global scope.
+# 3. Reading a global variable does NOT require 'global'.
+# 4. Best practice: prefer returning values instead of modifying globals directly.
+# -------------------------------------------------------------------
