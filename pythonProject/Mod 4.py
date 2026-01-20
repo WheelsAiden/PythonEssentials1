@@ -764,3 +764,30 @@ def list_updater(lst):
 
 foo = [1, 2, 3, 4, 5]
 print("Exercise 4:", list_updater(foo))  # [1, 4, 9, 16, 25]
+
+print("Aiden Walker - 1/20/2026")
+
+print()
+
+# Example 1: This will raise an error because x is local to the function
+def scope_test():
+    x = 123
+
+scope_test()
+
+# x does NOT exist outside the function
+# This line will cause:
+# NameError: name 'x' is not defined
+# print(x)
+
+
+# --------------------------------------------------
+
+
+# Example 2: Correct way — return the value from the function
+def scope_test_fixed():
+    x = 123
+    return x
+
+value = scope_test_fixed()
+print(value)   # Output: 123
