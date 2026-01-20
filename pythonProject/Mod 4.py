@@ -885,3 +885,52 @@ def my_function_modify(my_list_1):
 my_list_2 = [2, 3]
 my_function_modify(my_list_2)
 print("Outside function after in-place modification:", my_list_2)
+
+print()
+
+# Exercise 1
+def message():
+    alt = 1
+    print("Hello, World!")
+
+# print(alt)  # NameError: name 'alt' is not defined
+
+# --------------------------------------------------
+
+# Exercise 2
+a = 1
+
+def fun2():
+    a = 2   # local variable
+    print(a)
+
+fun2()      # prints 2
+print(a)    # prints 1 (global 'a' unchanged)
+
+# --------------------------------------------------
+
+# Exercise 3
+a = 1
+
+def fun3():
+    global a
+    a = 2   # modifies global 'a'
+    print(a)
+
+fun3()      # prints 2
+a = 3       # modifies global 'a' again
+print(a)    # prints 3
+
+# --------------------------------------------------
+
+# Exercise 4
+a = 1
+
+def fun4():
+    global a
+    a = 2   # modifies global 'a'
+    print(a)
+
+a = 3       # global 'a' is now 3
+fun4()      # prints 2
+print(a)    # prints 2 (global 'a' was changed by fun4)
