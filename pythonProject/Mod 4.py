@@ -791,3 +791,35 @@ def scope_test_fixed():
 
 value = scope_test_fixed()
 print(value)   # Output: 123
+
+print()
+
+# Example 1: Reading a global variable inside a function
+
+def my_function():
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+
+# Example 2: Local variable shadows the global one
+
+def my_function():
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+
+# Example 3: Assignment makes the variable local (this will raise an error)
+
+def my_function():
+    var += 1      # Python treats var as local because of assignment
+    print(var)
+
+var = 10
+my_function()    # UnboundLocalError
