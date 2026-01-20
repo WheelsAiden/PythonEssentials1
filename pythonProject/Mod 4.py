@@ -851,3 +851,37 @@ print("After function call, var =", var)  # prints 2
 # 3. Reading a global variable does NOT require 'global'.
 # 4. Best practice: prefer returning values instead of modifying globals directly.
 # -------------------------------------------------------------------
+
+print()
+
+# Example 1: Scalars / Immutable types
+def my_function_scalar(n):
+    print("I got", n)
+    n += 1
+    print("I have", n)
+
+var = 1
+my_function_scalar(var)
+print("Outside function (scalar):", var)
+print("------")
+
+# Example 2: Lists / Mutable types - reassigning parameter
+def my_function_reassign(my_list_1):
+    print("Print #1:", my_list_1)
+    my_list_1 = [0, 1]  # Reassign the parameter
+    print("Print #2:", my_list_1)
+
+my_list_2 = [2, 3]
+my_function_reassign(my_list_2)
+print("Outside function after reassignment:", my_list_2)
+print("------")
+
+# Example 3: Lists / Mutable types - modifying the list in place
+def my_function_modify(my_list_1):
+    print("Print #1:", my_list_1)
+    del my_list_1[0]  # Modify the list object itself
+    print("Print #2:", my_list_1)
+
+my_list_2 = [2, 3]
+my_function_modify(my_list_2)
+print("Outside function after in-place modification:", my_list_2)
