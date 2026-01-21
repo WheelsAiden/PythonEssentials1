@@ -1430,3 +1430,33 @@ print()  # just for spacing
 # Using values() to get only the values
 for french in dictionary.values():
     print(french)
+
+print()
+
+# Original dictionary
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+# 1. Modifying an existing value
+dictionary['cat'] = 'minou'   # Changes the value of the key 'cat'
+print("After modifying 'cat':", dictionary)
+# Output: {'cat': 'minou', 'dog': 'chien', 'horse': 'cheval'}
+
+# 2. Adding a new key-value pair
+dictionary['swan'] = 'cygne'  # Adds a new key 'swan' with value 'cygne'
+print("After adding 'swan':", dictionary)
+# Output: {'cat': 'minou', 'dog': 'chien', 'horse': 'cheval', 'swan': 'cygne'}
+
+# 3. Adding a new key-value pair using update()
+dictionary.update({"duck": "canard"})
+print("After updating with 'duck':", dictionary)
+# Output: {'cat': 'minou', 'dog': 'chien', 'horse': 'cheval', 'swan': 'cygne', 'duck': 'canard'}
+
+# 4. Removing a key using del
+del dictionary['dog']  # Removes the key 'dog' and its value
+print("After deleting 'dog':", dictionary)
+# Output: {'cat': 'minou', 'horse': 'cheval', 'swan': 'cygne', 'duck': 'canard'}
+
+# 5. Removing the last item using popitem()
+dictionary.popitem()   # Removes the last inserted item (Python 3.7+ preserves order)
+print("After popitem():", dictionary)
+# Output: {'cat': 'minou', 'horse': 'cheval', 'swan': 'cygne'}
