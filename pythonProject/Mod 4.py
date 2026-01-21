@@ -993,3 +993,36 @@ if is_a_triangle(a, b, c):
     print("Yes, these sides can form a triangle.")
 else:
     print("No, these sides cannot form a triangle.")
+
+print()
+
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+
+def is_a_right_triangle(a, b, c):
+    if not is_a_triangle(a, b, c):
+        return False
+
+    # determine the hypotenuse (the longest side)
+    if a >= b and a >= c:
+        return a ** 2 == b ** 2 + c ** 2
+    elif b >= a and b >= c:
+        return b ** 2 == a ** 2 + c ** 2
+    else:
+        return c ** 2 == a ** 2 + b ** 2
+
+
+a = float(input("Enter the first side's length: "))
+b = float(input("Enter the second side's length: "))
+c = float(input("Enter the third side's length: "))
+
+if is_a_triangle(a, b, c):
+    print("Yes, it can be a triangle.")
+    if is_a_right_triangle(a, b, c):
+        print("It is also a right-angled triangle.")
+    else:
+        print("But it is not a right-angled triangle.")
+else:
+    print("No, it can't be a triangle.")
+
