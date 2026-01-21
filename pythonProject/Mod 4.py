@@ -1486,3 +1486,78 @@ for name in sorted(school_class.keys()):
         total += score
         count += 1
     print(name, ":", total / count)
+
+print()
+
+# 1. Tuples vs Lists
+my_tuple = (1, 2, True, "a string", (3, 4), [5, 6], None)
+print(my_tuple)
+
+my_list = [1, 2, True, "a string", (3, 4), [5, 6], None]
+print(my_list)
+
+
+# 2. Empty tuple
+empty_tuple = ()
+print(type(empty_tuple))    # <class 'tuple'>
+
+
+# 3. One-element tuples
+one_elem_tuple_1 = ("one",)
+one_elem_tuple_2 = "one",
+
+my_tuple_1 = 1,
+print(type(my_tuple_1))    # <class 'tuple'>
+
+my_tuple_2 = 1
+print(type(my_tuple_2))    # <class 'int'>
+
+
+# 4. Accessing tuple elements
+my_tuple = (1, 2.0, "string", [3, 4], (5,), True)
+print(my_tuple[3])    # [3, 4]
+
+
+# 5. Immutability example (will raise TypeError if uncommented)
+# my_tuple[2] = "guitar"
+
+# Deleting a tuple
+my_tuple = (1, 2, 3)
+del my_tuple
+# print(my_tuple)    # NameError
+
+
+# 6. Tuple operations
+tuple_1 = (1, 2, 3)
+for elem in tuple_1:
+    print(elem)
+
+tuple_2 = (1, 2, 3, 4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+
+tuple_3 = (1, 2, 3, 5)
+print(len(tuple_3))
+
+tuple_4 = tuple_1 + tuple_2
+tuple_5 = tuple_3 * 2
+
+print(tuple_4)
+print(tuple_5)
+
+
+# EXTRA: Converting between tuples and lists
+my_tuple = tuple((1, 2, "string"))
+print(my_tuple)
+
+my_list = [2, 4, 6]
+print(my_list)
+print(type(my_list))
+
+tup = tuple(my_list)
+print(tup)
+print(type(tup))
+
+tup = (1, 2, 3)
+my_list = list(tup)
+print(type(my_list))
