@@ -1232,3 +1232,30 @@ def fun(a):
         return a + fun(a + 3)
 
 print("Result of fun(25) is:", fun(25))  # Calculation: 25 + 28 + 3 = 56
+
+print()
+
+# Mutable list
+my_list = [1, 2, 3]
+my_list.append(4)
+print("List after append:", my_list)
+
+# Tuples
+tuple_1 = (1, 2, 4, 8)
+tuple_2 = 1., 0.5, 0.25, 0.125
+print("Tuple 1:", tuple_1)
+print("Tuple 2:", tuple_2)
+
+# Mixed types tuple
+mixed_tuple = (1, "hello", 3.14, True)
+print("Mixed Tuple:", mixed_tuple)
+
+# Empty and one-element tuples
+empty_tuple = ()
+one_element_tuple_1 = (1,)
+one_element_tuple_2 = 1.,
+single_value = (1)
+print("Empty Tuple:", empty_tuple)
+print("One-element tuple 1:", one_element_tuple_1)
+print("One-element tuple 2:", one_element_tuple_2)
+print("Single value (not a tuple):", single_value)
