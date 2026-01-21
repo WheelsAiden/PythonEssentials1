@@ -1561,3 +1561,90 @@ print(type(tup))
 tup = (1, 2, 3)
 my_list = list(tup)
 print(type(my_list))
+
+print()
+
+# 1. Creating dictionaries
+my_dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+}
+
+pol_eng_dictionary = {
+    "kwiat": "flower",
+    "woda": "water",
+    "gleba": "soil"
+}
+
+# 2. Accessing values
+item_1 = pol_eng_dictionary["gleba"]
+print(item_1)  # soil
+
+item_2 = pol_eng_dictionary.get("woda")
+print(item_2)  # water
+
+# 3. Modifying values
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+}
+
+pol_eng_dictionary["zamek"] = "lock"
+item = pol_eng_dictionary["zamek"]
+print(item)  # lock
+
+# 4. Adding and removing items
+phonebook = {}
+
+phonebook["Adam"] = 3456783958
+print(phonebook)  # {'Adam': 3456783958}
+
+del phonebook["Adam"]
+print(phonebook)  # {}
+
+pol_eng_dictionary = {"kwiat": "flower"}
+
+pol_eng_dictionary.update({"gleba": "soil"})
+print(pol_eng_dictionary)  # {'kwiat': 'flower', 'gleba': 'soil'}
+
+pol_eng_dictionary.popitem()
+print(pol_eng_dictionary)  # {'kwiat': 'flower'}
+
+# 5. Looping through dictionary keys
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+}
+
+for item in pol_eng_dictionary:
+    print(item)
+
+# 6. Looping through keys and values
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+
+# 7. Checking if a key exists
+if "zamek" in pol_eng_dictionary:
+    print("Yes")
+else:
+    print("No")
+
+# 8. Deleting items and clearing dictionary
+print(len(pol_eng_dictionary))      # 3
+del pol_eng_dictionary["zamek"]
+print(len(pol_eng_dictionary))      # 2
+
+pol_eng_dictionary.clear()
+print(len(pol_eng_dictionary))      # 0
+
+# 9. Copying a dictionary
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+}
+
+copy_dictionary = pol_eng_dictionary.copy()
