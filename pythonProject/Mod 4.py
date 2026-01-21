@@ -1123,3 +1123,68 @@ def fib(n):
 for n in range(1, 10):
     print(n, "->", fib(n))
 
+print()
+
+# ------------------------------
+# Factorial functions
+# ------------------------------
+
+# Recursive version of factorial
+def factorial_recursive(n):
+    """Calculate factorial using recursion."""
+    if n < 0:  # Invalid input
+        return None
+    if n < 2:  # Base case: 0! = 1! = 1
+        return 1
+    return n * factorial_recursive(n - 1)  # Recursive call
+
+# Iterative version of factorial
+def factorial_iterative(n):
+    """Calculate factorial using a loop."""
+    if n < 0:  # Invalid input
+        return None
+    product = 1
+    for i in range(2, n + 1):
+        product *= i
+    return product
+
+
+# ------------------------------
+# Fibonacci functions
+# ------------------------------
+
+# Recursive version of Fibonacci
+def fib_recursive(n):
+    """Calculate nth Fibonacci number using recursion."""
+    if n < 1:  # Invalid input
+        return None
+    if n < 3:  # Base case: 1st and 2nd numbers are 1
+        return 1
+    return fib_recursive(n - 1) + fib_recursive(n - 2)  # Recursive call
+
+# Iterative version of Fibonacci
+def fib_iterative(n):
+    """Calculate nth Fibonacci number using a loop."""
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    elem_1 = elem_2 = 1
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+
+
+# ------------------------------
+# Test the functions
+# ------------------------------
+
+print("Factorials:")
+for i in range(6):
+    print(f"{i}! -> {factorial_recursive(i)} (recursive), {factorial_iterative(i)} (iterative)")
+
+print("\nFibonacci numbers:")
+for i in range(1, 10):
+    print(f"fib({i}) -> {fib_recursive(i)} (recursive), {fib_iterative(i)} (iterative)")
+
