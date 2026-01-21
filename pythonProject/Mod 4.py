@@ -1188,3 +1188,47 @@ print("\nFibonacci numbers:")
 for i in range(1, 10):
     print(f"fib({i}) -> {fib_recursive(i)} (recursive), {fib_iterative(i)} (iterative)")
 
+print()
+
+# -------------------------------
+# EXAMPLE 1: Factorial WITHOUT a base case
+# -------------------------------
+
+def factorial_no_base(n):
+    # This function calls itself but has no termination condition (base case)
+    # WARNING: Running this will cause a RecursionError
+    return n * factorial_no_base(n - 1)
+
+# Uncommenting the next line will crash Python with:
+# RecursionError: maximum recursion depth exceeded
+# print(factorial_no_base(4))
+
+
+# -------------------------------
+# EXAMPLE 2: Factorial WITH a base case
+# -------------------------------
+
+def factorial(n):
+    # Base case: when n is 1, stop the recursion
+    if n == 1:
+        return 1
+    else:
+        # Recursive case: multiply n by factorial of (n-1)
+        return n * factorial(n - 1)
+
+print("Factorial of 4 is:", factorial(4))  # 4 * 3 * 2 * 1 = 24
+
+
+# -------------------------------
+# EXERCISE 2: Recursive addition function
+# -------------------------------
+
+def fun(a):
+    # Base case: if a exceeds 30, stop the recursion
+    if a > 30:
+        return 3
+    else:
+        # Recursive case: add current a to the result of fun(a + 3)
+        return a + fun(a + 3)
+
+print("Result of fun(25) is:", fun(25))  # Calculation: 25 + 28 + 3 = 56
