@@ -1259,3 +1259,28 @@ print("Empty Tuple:", empty_tuple)
 print("One-element tuple 1:", one_element_tuple_1)
 print("One-element tuple 2:", one_element_tuple_2)
 print("Single value (not a tuple):", single_value)
+
+print()
+
+# Original tuple
+my_tuple = (1, 10, 100, 1000)
+print("Original tuple:", my_tuple)
+
+# "Modify" tuple by creating a new one
+new_tuple = my_tuple + (5000,)
+print("After adding 5000:", new_tuple)
+
+modified_tuple = my_tuple[:2] + (999,) + my_tuple[3:]
+print("After changing 100 to 999:", modified_tuple)
+
+removed_tuple = my_tuple[:1] + my_tuple[2:]
+print("After removing 10:", removed_tuple)
+
+# Loop through tuples
+print("\nOriginal tuple elements:")
+for elem in my_tuple:
+    print(elem)
+
+print("\nModified tuple elements:")
+for elem in modified_tuple:
+    print(elem)
