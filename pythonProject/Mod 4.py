@@ -1330,3 +1330,31 @@ print(t1, t2, t3)
 # - Tuples can store literals, variables, or expressions.
 # - They are immutable, so operations like + and * create new tuples.
 # - You can unpack tuples to swap values elegantly without a temporary variable.
+
+print()
+
+# Creating dictionaries
+english_french = {"cat": "chat", "dog": "chien", "horse": "cheval"}  # Keys and values are strings
+phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}           # Keys are strings, values are numbers
+empty_dict = {}                                                      # An empty dictionary
+
+# Accessing values by key
+print(english_french["cat"])        # Output: chat
+print(phone_numbers['Suzy'])        # Output: 22657854310
+
+# Adding a new key-value pair
+english_french["bird"] = "oiseau"  # Adds "bird": "oiseau" to the dictionary
+
+# Updating an existing key's value
+english_french["cat"] = "feline"   # Changes "cat" value from "chat" to "feline"
+
+# Deleting a key-value pair
+del phone_numbers['boss']           # Removes the key 'boss' from the dictionary
+
+# Checking the length (number of key-value pairs)
+print(len(english_french))          # Output: 4
+
+# Printing entire dictionaries
+print(english_french)               # Output: {'cat': 'feline', 'dog': 'chien', 'horse': 'cheval', 'bird': 'oiseau'}
+print(phone_numbers)                 # Output: {'Suzy': 22657854310}
+print(empty_dict)                    # Output: {}
