@@ -1026,3 +1026,60 @@ if is_a_triangle(a, b, c):
 else:
     print("No, it can't be a triangle.")
 
+print()
+
+# This function checks whether three sides can form a triangle
+# Rule: the sum of any two sides must be greater than the third
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+
+# This function calculates the area of a triangle using Heron's formula
+def heron(a, b, c):
+    # Semi-perimeter (half of the perimeter)
+    p = (a + b + c) / 2
+
+    # Heron's formula:
+    # Area = sqrt(p(p-a)(p-b)(p-c))
+    # The square root is calculated using exponentiation (** 0.5)
+    return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+
+
+# This function safely computes the triangle's area
+def area_of_triangle(a, b, c):
+    # First, check if the sides form a valid triangle
+    if not is_a_triangle(a, b, c):
+        return None  # Invalid triangle
+
+    # If valid, return the area using Heron's formula
+    return heron(a, b, c)
+
+
+# ---- TEST EXAMPLE ----
+# Right triangle with sides 1, 1, sqrt(2)
+# Expected area = 0.5
+test_area = area_of_triangle(1.0, 1.0, 2.0 ** 0.5)
+
+# Floating-point math may not be exact
+# So the result is very close to 0.5, but not exactly 0.5
+print("Test triangle area:", test_area)
+
+
+# ---- USER INPUT SECTION ----
+# Ask the user for triangle sides
+a = float(input("Enter the first side's length: "))
+b = float(input("Enter the second side's length: "))
+c = float(input("Enter the third side's length: "))
+
+# Check if the sides form a triangle
+if is_a_triangle(a, b, c):
+    print("Yes, it can be a triangle.")
+
+    # Calculate the area
+    area = area_of_triangle(a, b, c)
+
+    # Round the result to avoid long floating-point decimals
+    print("Triangle area:", round(area, 4))
+else:
+    print("No, it can't be a triangle.")
+
