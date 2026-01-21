@@ -1284,3 +1284,49 @@ for elem in my_tuple:
 print("\nModified tuple elements:")
 for elem in modified_tuple:
     print(elem)
+
+print()
+
+# Original tuple
+my_tuple = (1, 10, 100)
+
+# Using + to join tuples: adds elements to create a new tuple
+t1 = my_tuple + (1000, 10000)
+
+# Using * to multiply tuples: repeats the elements multiple times
+t2 = my_tuple * 3
+
+# len() function: returns the number of elements in a tuple
+print(len(t2))   # Output: 9 (because my_tuple has 3 elements, multiplied by 3)
+
+# Print the new joined tuple
+print(t1)        # Output: (1, 10, 100, 1000, 10000)
+
+# Print the repeated tuple
+print(t2)        # Output: (1, 10, 100, 1, 10, 100, 1, 10, 100)
+
+# Check if 10 is in my_tuple
+print(10 in my_tuple)      # Output: True
+
+# Check if -10 is NOT in my_tuple
+print(-10 not in my_tuple) # Output: True
+
+
+# Example of tuple unpacking and swapping
+var = 123
+
+t1 = (1, )
+t2 = (2, )
+t3 = (3, var)
+
+# Tuple unpacking: the values circulate among the tuples
+t1, t2, t3 = t2, t3, t1
+
+print(t1, t2, t3)
+# Output: (2,) (3, 123) (1,)
+# Explanation: t1 got t2's value, t2 got t3's value, t3 got t1's value
+
+# Key points:
+# - Tuples can store literals, variables, or expressions.
+# - They are immutable, so operations like + and * create new tuples.
+# - You can unpack tuples to swap values elegantly without a temporary variable.
