@@ -1460,3 +1460,29 @@ print("After deleting 'dog':", dictionary)
 dictionary.popitem()   # Removes the last inserted item (Python 3.7+ preserves order)
 print("After popitem():", dictionary)
 # Output: {'cat': 'minou', 'horse': 'cheval', 'swan': 'cygne'}
+
+print()
+
+school_class = {}
+
+while True:
+    name = input("Enter the student's name: ")
+    if name == '':
+        break
+
+    score = int(input("Enter the student's score (0-10): "))
+    if score not in range(0, 11):
+        break
+
+    if name in school_class:
+        school_class[name] += (score,)
+    else:
+        school_class[name] = (score,)
+
+for name in sorted(school_class.keys()):
+    total = 0
+    count = 0
+    for score in school_class[name]:
+        total += score
+        count += 1
+    print(name, ":", total / count)
