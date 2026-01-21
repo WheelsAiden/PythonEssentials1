@@ -934,3 +934,17 @@ def fun4():
 a = 3       # global 'a' is now 3
 fun4()      # prints 2
 print(a)    # prints 2 (global 'a' was changed by fun4)
+
+print("Aiden Walker - 1/21/2026")
+
+print()
+
+def bmi(weight, height):
+    if weight <= 0 or height <= 0:
+        return None
+    return weight / height ** 2
+
+
+print(bmi(52.5, 1.65))   # valid values
+print(bmi(-10, 1.65))   # invalid weight
+print(bmi(52.5, 0))     # invalid height
