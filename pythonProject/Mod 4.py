@@ -1391,3 +1391,27 @@ for name in names:
 # Demonstrating an empty dictionary
 if not empty_dictionary:
     print("The dictionary is empty!")
+
+print()
+
+# Define a dictionary with some animal translations
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+# Loop through dictionary keys (unsorted)
+print("Looping through dictionary keys (unsorted):")
+for key in dictionary.keys():  # .keys() returns all keys
+    print(key, "->", dictionary[key])
+
+print()  # Empty line for clarity
+
+# Loop through dictionary keys in sorted order
+print("Looping through dictionary keys (sorted):")
+for key in sorted(dictionary.keys()):  # sorted() returns keys alphabetically
+    print(key, "->", dictionary[key])
+
+print()  # Empty line for clarity
+
+# Shortcut: looping directly over the dictionary (same as using .keys())
+print("Looping directly over the dictionary (shortcut):")
+for key in dictionary:
+    print(key, "->", dictionary[key])
