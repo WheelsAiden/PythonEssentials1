@@ -1415,3 +1415,18 @@ print()  # Empty line for clarity
 print("Looping directly over the dictionary (shortcut):")
 for key in dictionary:
     print(key, "->", dictionary[key])
+
+print()
+
+# Example dictionary
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+# Using items() to get key-value pairs
+for english, french in dictionary.items():
+    print(english, "->", french)
+
+print()  # just for spacing
+
+# Using values() to get only the values
+for french in dictionary.values():
+    print(french)
