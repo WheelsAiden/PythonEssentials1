@@ -973,3 +973,23 @@ print(bmi(weight=lb_to_kg(176), height=ft_and_inch_to_m(5, 7)))
 # Test: protection against invalid values
 print(bmi(352.5, 1.65))
 
+print()
+
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+
+# Test cases
+print(is_a_triangle(1, 1, 1))  # True
+print(is_a_triangle(1, 1, 3))  # False
+
+
+# Larger program using user input
+a = float(input("Enter length of side A: "))
+b = float(input("Enter length of side B: "))
+c = float(input("Enter length of side C: "))
+
+if is_a_triangle(a, b, c):
+    print("Yes, these sides can form a triangle.")
+else:
+    print("No, these sides cannot form a triangle.")
