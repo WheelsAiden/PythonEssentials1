@@ -1358,3 +1358,36 @@ print(len(english_french))          # Output: 4
 print(english_french)               # Output: {'cat': 'feline', 'dog': 'chien', 'horse': 'cheval', 'bird': 'oiseau'}
 print(phone_numbers)                 # Output: {'Suzy': 22657854310}
 print(empty_dict)                    # Output: {}
+
+print()
+
+# Dictionaries
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
+empty_dictionary = {}
+
+# Accessing values directly (make sure the key exists!)
+print(dictionary['cat'])        # Output: chat
+print(phone_numbers['Suzy'])    # Output: 22657854310
+
+# Accessing safely using 'in' to avoid runtime errors
+words = ['cat', 'lion', 'horse']
+
+for word in words:
+    if word in dictionary:              # Check if the key exists
+        print(word, "->", dictionary[word])
+    else:
+        print(word, "is not in dictionary")
+
+# You can also check for phone numbers safely
+names = ['boss', 'Suzy', 'president']
+
+for name in names:
+    if name in phone_numbers:
+        print(name, "->", phone_numbers[name])
+    else:
+        print(name, "is not in phone_numbers")
+
+# Demonstrating an empty dictionary
+if not empty_dictionary:
+    print("The dictionary is empty!")
