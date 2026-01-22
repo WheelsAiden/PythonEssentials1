@@ -1738,3 +1738,27 @@ try:
 except:
     # Runs if ANY error occurs in the try block
     print("An error occurred. Please enter a valid, non-zero number.")
+
+print()
+
+try:
+    # Ask the user for input
+    value = int(input('Enter a natural number: '))
+
+    # Compute the reciprocal
+    print('The reciprocal of', value, 'is', 1 / value)
+
+# Handle the case where input is not an integer
+except ValueError:
+    print("That was not a valid number. Please enter a natural number.")
+
+# Handle the case where the user enters 0
+except ZeroDivisionError:
+    print("You cannot enter zero, because division by zero is not allowed.")
+
+# Optional: catch any other unexpected exception
+except Exception as e:
+    print("An unexpected error occurred:", e)
+
+# Normal execution continues here
+print("Program execution continues as normal.")
