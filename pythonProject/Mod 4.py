@@ -1800,3 +1800,64 @@ except Exception as e:  # 'Exception as e' lets us see the error message
     print('Something strange has happened here... Sorry!')
     print('Error details:', e)
 
+print()
+
+# -------------------------------
+# 1. ZeroDivisionError
+# -------------------------------
+print("1. ZeroDivisionError example")
+try:
+    a = 10
+    b = 0
+    print(a / b)   # division by zero
+except ZeroDivisionError as e:
+    print("Caught an exception:", e)
+
+print()
+
+# -------------------------------
+# 2. ValueError
+# -------------------------------
+print("2. ValueError example")
+try:
+    num = int("abc")  # invalid string for int conversion
+except ValueError as e:
+    print("Caught an exception:", e)
+
+print()
+
+# -------------------------------
+# 3. TypeError
+# -------------------------------
+print("3. TypeError example")
+try:
+    short_list = [1]
+    one_value = short_list[0.5]  # index must be int, not float
+except TypeError as e:
+    print("Caught an exception:", e)
+
+print()
+
+# -------------------------------
+# 4. AttributeError
+# -------------------------------
+print("4. AttributeError example")
+try:
+    short_list = [1]
+    short_list.append(2)
+    short_list.depend(3)  # 'list' object has no attribute 'depend'
+except AttributeError as e:
+    print("Caught an exception:", e)
+
+print()
+
+# -------------------------------
+# 5. SyntaxError
+# -------------------------------
+print("5. SyntaxError example")
+# Note: SyntaxError cannot be caught in the same file if the code itself is invalid,
+# so we simulate it using exec() for demonstration
+try:
+    exec("if True print('missing colon')")  # invalid syntax
+except SyntaxError as e:
+    print("Caught an exception:", e)
