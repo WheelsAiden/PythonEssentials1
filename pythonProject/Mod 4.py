@@ -1901,3 +1901,58 @@ elif temperature < 0:
     print("Below zero")
 else:
     print("Zero")
+
+print()
+
+# Example 1: SyntaxError vs Exception
+# This is just for demonstration; uncommenting the next line will cause a SyntaxError
+# print("Hello, World!)
+
+# Example 2: ZeroDivisionError
+# Uncommenting the next line will raise a ZeroDivisionError
+# print(1/0)
+
+# Example 3: Basic try-except to handle invalid input
+while True:
+    try:
+        number = int(input("Enter an integer number: "))
+        print(number / 2)
+        break
+    except:
+        print("Warning: the value entered is not a valid number. Try again...")
+
+# Example 4: Multiple except blocks
+while True:
+    try:
+        number = int(input("Enter an int number: "))
+        print(5 / number)
+        break
+    except ValueError:
+        print("Wrong value.")
+    except ZeroDivisionError:
+        print("Sorry. I cannot divide by zero.")
+    except:
+        print("I don't know what to do...")
+
+# Example 5: Multiple exceptions in a single except clause
+while True:
+    try:
+        number = int(input("Enter an int number: "))
+        print(5 / number)
+        break
+    except (ValueError, ZeroDivisionError):
+        print("Wrong value or No division by zero rule broken.")
+    except:
+        print("Sorry, something went wrong...")
+
+# Exercise: What happens if the user enters 0?
+try:
+    value = int(input("Enter a value: "))
+    print(value / value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except:
+    print("Booo!")
+
