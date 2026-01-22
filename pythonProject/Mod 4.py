@@ -1864,7 +1864,6 @@ except SyntaxError as e:
 
 print()
 
-
 # Temperature Checker with all execution paths
 # This code asks the user for temperature input and prints whether it is above, below, or equal to zero.
 
@@ -1875,7 +1874,6 @@ def check_temperature(temp):
         print("Below zero")
     else:
         print("Zero")
-
 
 # Loop to test multiple inputs if needed
 while True:
@@ -1890,3 +1888,16 @@ while True:
 
     except ValueError:
         print("Invalid input. Please enter a number or 'q' to quit.")
+
+print()
+
+# Ask the user for the current temperature
+temperature = float(input('Enter current temperature:'))
+
+# Check if the temperature is above, below, or exactly zero
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    print("Below zero")
+else:
+    print("Zero")
