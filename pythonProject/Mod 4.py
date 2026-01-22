@@ -1722,3 +1722,19 @@ except ValueError:
     print("Error: you must enter a whole number.")
 except ZeroDivisionError:
     print("Error: division by zero is not allowed.")
+
+print()
+
+try:
+    # Ask the user for a number
+    number = int(input("Enter a number: "))
+
+    # Try to divide 10 by the number
+    result = 10 / number
+
+    # If everything works, print the result
+    print("Result:", result)
+
+except:
+    # Runs if ANY error occurs in the try block
+    print("An error occurred. Please enter a valid, non-zero number.")
