@@ -1956,3 +1956,124 @@ except ZeroDivisionError:
 except:
     print("Booo!")
 
+print()
+
+from random import randrange
+
+
+# --- Display the board with perfectly centered numbers ---
+def display_board(board):
+    print("+-------+-------+-------+")
+    for row in board:
+        print("|       |       |       |")
+        print("|  {}  |  {}  |  {}  |".format(*[str(cell).center(3) for cell in row]))
+        print("|       |       |       |")
+        print("+-------+-------+-------+")
+
+
+# --- User move ---
+def enter_move(board):
+    while True:
+        move = input("Enter your move: ")
+        if not move.isdigit():
+            print("Invalid input! Enter a number between 1 and 9.")
+            continue
+        move = int(move)
+        if move < 1 or move > 9:
+            print("Invalid input! Number must be between 1 and 9.")
+            continue
+        row = (move - 1) // 3
+        col = (move - 1) % 3
+        if board[row][col] in ['X', 'O']:
+            print("Square already taken! Choose another one.")
+            continue
+        board[row][col] = 'O'
+        break
+
+
+# --- Free squares ---
+def make_list_of_free_fields(board):
+    free = []
+    for r in range(3):
+        for c in range(3):
+            if board[r][c] not in ['X', 'O']:
+                free.append((r, c))
+    return free
+
+
+# --- Check for victory ---
+def victory_for(board, sign):
+    # Rows
+    for row in board:
+        if all(cell == sign for cell in row):
+            return True
+    # Columns
+    for c in range(3):
+        if all(board[r][c] == sign for r in range(3)):
+            return True
+    # Diagonals
+    if all(board[i][i] == sign for i in range(3)):
+        return True
+    if all(board[i][2 - i] == sign for i in range(3)):
+        return True
+    return False
+
+
+# --- Computer move ---
+def draw_move(board):
+    free = make_list_of_free_fields(board)
+    if free:
+        r, c = free[randrange(len(free))]
+        board[r][c] = 'X'
+
+
+# --- Main program ---
+def main():
+    # Initialize board with numbers
+    board = [[str(3 * r + c + 1) for c in range(3)] for r in range(3)]
+
+    # First computer move: center
+    board[1][1] = 'X'
+
+    while True:
+        display_board(board)
+
+        # Check for victory/tie before user's move
+        if victory_for(board, 'X'):
+            print("Computer wins!")
+            break
+        if victory_for(board, 'O'):
+            print("You won!")
+            break
+        if not make_list_of_free_fields(board):
+            print("It's a tie!")
+            break
+
+        # User move
+        enter_move(board)
+
+        # Check for victory/tie after user's move
+        display_board(board)
+        if victory_for(board, 'O'):
+            print("You won!")
+            break
+        if not make_list_of_free_fields(board):
+            print("It's a tie!")
+            break
+
+        # Computer move
+        draw_move(board)
+
+        # Check for victory/tie after computer's move
+        if victory_for(board, 'X'):
+            display_board(board)
+            print("Computer wins!")
+            break
+        if not make_list_of_free_fields(board):
+            display_board(board)
+            print("It's a tie!")
+            break
+
+
+# Run the game
+main()
