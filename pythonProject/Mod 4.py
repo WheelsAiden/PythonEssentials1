@@ -1861,3 +1861,32 @@ try:
     exec("if True print('missing colon')")  # invalid syntax
 except SyntaxError as e:
     print("Caught an exception:", e)
+
+print()
+
+
+# Temperature Checker with all execution paths
+# This code asks the user for temperature input and prints whether it is above, below, or equal to zero.
+
+def check_temperature(temp):
+    if temp > 0:
+        print("Above zero")
+    elif temp < 0:
+        print("Below zero")
+    else:
+        print("Zero")
+
+
+# Loop to test multiple inputs if needed
+while True:
+    try:
+        user_input = input("Enter current temperature (or 'q' to quit): ")
+        if user_input.lower() == 'q':
+            print("Exiting the program.")
+            break
+
+        temperature = float(user_input)
+        check_temperature(temperature)
+
+    except ValueError:
+        print("Invalid input. Please enter a number or 'q' to quit.")
