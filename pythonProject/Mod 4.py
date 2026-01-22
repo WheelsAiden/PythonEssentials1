@@ -1708,3 +1708,17 @@ colors = {
 
 for col, rgb in colors.items():
     print(col, ":", rgb)
+
+print()
+
+print("Aiden Walker - 1/22/2026")
+
+print()
+
+try:
+    value = int(input("Enter a natural number: "))
+    print("The reciprocal of", value, "is", 1 / value)
+except ValueError:
+    print("Error: you must enter a whole number.")
+except ZeroDivisionError:
+    print("Error: division by zero is not allowed.")
