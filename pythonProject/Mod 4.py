@@ -1781,3 +1781,22 @@ while True:
         # Only runs if no exception occurred
         print('The reciprocal of', value, 'is', reciprocal)
         break  # exit the loop after successful input
+
+print()
+
+try:
+    # Ask the user for input and calculate the reciprocal
+    value = int(input('Enter a natural number: '))
+    print('The reciprocal of', value, 'is', 1/value)
+
+# Handle specific exceptions
+except ValueError:
+    print('I do not know what to do.')
+except ZeroDivisionError:
+    print('Division by zero is not allowed in our Universe.')
+
+# Default (catch-all) exception
+except Exception as e:  # 'Exception as e' lets us see the error message
+    print('Something strange has happened here... Sorry!')
+    print('Error details:', e)
+
