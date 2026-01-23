@@ -1,4 +1,4 @@
-"""
+
 print("Aiden Walker - 1/12/26")
 
 print()
@@ -417,7 +417,7 @@ print(strange_function_succinct(2))   # Output: True
 print(strange_function_succinct(1))   # Output: False
 
 print()
-"""
+
 print("Aiden Walker - 1/19/2026")
 
 print()
@@ -1131,7 +1131,7 @@ print()
 
 # Recursive version of factorial
 def factorial_recursive(n):
-    """Calculate factorial using recursion."""
+    Calculate factorial using recursion.
     if n < 0:  # Invalid input
         return None
     if n < 2:  # Base case: 0! = 1! = 1
@@ -1140,7 +1140,7 @@ def factorial_recursive(n):
 
 # Iterative version of factorial
 def factorial_iterative(n):
-    """Calculate factorial using a loop."""
+    Calculate factorial using a loop.
     if n < 0:  # Invalid input
         return None
     product = 1
@@ -1155,7 +1155,7 @@ def factorial_iterative(n):
 
 # Recursive version of Fibonacci
 def fib_recursive(n):
-    """Calculate nth Fibonacci number using recursion."""
+    Calculate nth Fibonacci number using recursion.
     if n < 1:  # Invalid input
         return None
     if n < 3:  # Base case: 1st and 2nd numbers are 1
@@ -1164,7 +1164,7 @@ def fib_recursive(n):
 
 # Iterative version of Fibonacci
 def fib_iterative(n):
-    """Calculate nth Fibonacci number using a loop."""
+    Calculate nth Fibonacci number using a loop.
     if n < 1:
         return None
     if n < 3:
